@@ -1,0 +1,199 @@
+{
+  "decision": "pass",
+  "summary": {
+    "objective": "验证 404 静态页面交付物（工作区根目录 404.html）满足冻结验收：404 标识展示、“页面未找到”中文提示文案、“返回首页”入口跳转、无服务端直接打开完整显示、样式正常呈现。",
+    "changedBehavior": "新建交付：工作区根目录单文件静态页面 404.html；工作区此前无源码，属首次交付，无既有行为变更。",
+    "nonGoals": [
+      "服务端 404 状态码配置、路由重写或重定向（用户明确不需要服务端）",
+      "站点首页或其他页面的实现",
+      "移动端/窄屏专项适配",
+      "多语言版本"
+    ],
+    "riskLabels": []
+  },
+  "environment": {
+    "name": "Windows 本地桌面浏览器（agent_browser 内嵌预览浏览器，Chrome 引擎）",
+    "version": "Chrome/146.0.7680.188 Electron/41.2.1，视口 502×946",
+    "dataProfile": "无数据档案：静态展示页，无任何数据读写与种子数据"
+  },
+  "verification": [
+    {
+      "checkId": "QA-01",
+      "type": "browser-ui",
+      "status": "passed",
+      "plan": [
+        {
+          "requirementId": "AC-01",
+          "kind": "runtime-render",
+          "action": "查看页面主体内容。",
+          "expected": "页面显示清晰可读的“404”字样，位于页面主要可见区域。"
+        },
+        {
+          "requirementId": "AC-02",
+          "kind": "runtime-render",
+          "action": "阅读页面提示文案。",
+          "expected": "页面显示语义明确为“页面未找到/当前地址不存在”的中文提示。"
+        },
+        {
+          "requirementId": "AC-03",
+          "kind": "interaction",
+          "action": "找到“返回首页”入口并点击，观察浏览器跳转。",
+          "expected": "浏览器离开 404 页面，前往页面声明的首页目标地址。"
+        },
+        {
+          "requirementId": "AC-05",
+          "kind": "visual-style",
+          "action": "查看页面整体布局、排版与样式。",
+          "expected": "内容排版清晰，样式应用正确，无元素重叠、错位或样式缺失等明显问题。"
+        }
+      ],
+      "evidence": "浏览器执行记录（经本阶段自启预览服务 http://127.0.0.1:58694/404.html 打开）：页面显示 P.error-code 文本“404”（font-size 112px、font-weight 800，内容块在视口内水平居中，偏移 0px）；H1“页面未找到”与说明“当前地址不存在或已被移除，请检查链接是否正确。”无需任何操作即可读；“返回首页”为原生超链接（href=\"/\"），点击后浏览器离开 /404.html 导航至站点根路径 http://127.0.0.1:58694/；getComputedStyle 实测：body 背景 rgb(247,248,250)、grid 居中，标题 28px/600，按钮实底 rgb(29,78,216)、白字、圆角 6px、无下划线，各元素矩形无重叠、垂直间距 16/12/39px；网络面板显示整页仅 1 个文档请求（GET /404.html，200），scriptCount=0、无任何外部资源引用。",
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "浏览器记录 #1：打开 http://127.0.0.1:58694/404.html 后的可访问性快照、内容/样式/布局 eval 读取、网络请求清单，以及点击“返回首页”后的 URL 变更观察"
+      },
+      "assertions": [
+        {
+          "requirementId": "AC-01",
+          "kind": "runtime-render",
+          "action": "查看页面主体内容。",
+          "expected": "页面显示清晰可读的“404”字样，位于页面主要可见区域。",
+          "actual": "页面主要可见区域显示“404”字样（P.error-code，112px/800，内容块居中且 codeInViewport=true）",
+          "status": "passed"
+        },
+        {
+          "requirementId": "AC-02",
+          "kind": "runtime-render",
+          "action": "阅读页面提示文案。",
+          "expected": "页面显示语义明确为“页面未找到/当前地址不存在”的中文提示。",
+          "actual": "页面显示 H1“页面未找到”及说明文案“当前地址不存在或已被移除，请检查链接是否正确。”，语义明确为页面未找到/当前地址不存在，无需操作即可读",
+          "status": "passed"
+        },
+        {
+          "requirementId": "AC-03",
+          "kind": "interaction",
+          "action": "找到“返回首页”入口并点击，观察浏览器跳转。",
+          "expected": "浏览器离开 404 页面，前往页面声明的首页目标地址。",
+          "actual": "点击“返回首页”（原生 a href=\"/\"）后，浏览器离开 http://127.0.0.1:58694/404.html，前往页面声明的首页目标地址（站点根路径 http://127.0.0.1:58694/）",
+          "status": "passed"
+        },
+        {
+          "requirementId": "AC-05",
+          "kind": "visual-style",
+          "action": "查看页面整体布局、排版与样式。",
+          "expected": "内容排版清晰，样式应用正确，无元素重叠、错位或样式缺失等明显问题。",
+          "actual": "内容排版清晰：单列自上而下 404→标题→文案→按钮，内容块水平居中（偏移 0px）、各元素矩形无重叠（noOverlap 全部为 true）、间距 16/12/39px；关键样式实测生效（背景/字体/按钮实底/圆角/无下划线与源码声明一致）；整页仅 1 个文档请求、无脚本、无外部资源，无样式缺失",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "checkId": "QA-02",
+      "type": "browser-ui",
+      "status": "passed",
+      "plan": [
+        {
+          "requirementId": "AC-04",
+          "kind": "runtime-render",
+          "action": "检查提示标识、文案、入口与样式是否完整呈现。",
+          "expected": "页面完整渲染，无内容缺失，无因缺少外部依赖导致的样式缺失。"
+        }
+      ],
+      "evidence": "浏览器执行记录（以 file:// 协议直接打开本地文件 404.html，未运行任何服务端程序）：页面标题“404 · 页面未找到”，404 标识、“页面未找到”标题、“当前地址不存在或已被移除…”说明与“返回首页”入口完整呈现；getComputedStyle 实测样式与经 HTTP 服务打开时完全一致（body 背景 rgb(247,248,250)、error-code 112px/800、标题 28px、按钮 rgb(29,78,216)/白字/圆角 6px、text-align center），全部元素在视口内（allInViewport=true）且无重叠（noOverlap=true）；scriptCount=0、外部资源引用=0，无因缺少外部依赖导致的样式缺失。",
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "浏览器记录 #2：以 file:/// 协议直接打开工作区 404.html 后的内容/样式/布局 eval 读取结果"
+      },
+      "assertions": [
+        {
+          "requirementId": "AC-04",
+          "kind": "runtime-render",
+          "action": "检查提示标识、文案、入口与样式是否完整呈现。",
+          "expected": "页面完整渲染，无内容缺失，无因缺少外部依赖导致的样式缺失。",
+          "actual": "无服务端直接打开页面文件时完整渲染：提示标识、文案、入口与样式全部正常呈现（allInViewport=true、noOverlap=true、样式实测值与源码一致），scriptCount=0、externalLinks=0，无内容缺失、无外部依赖导致的样式缺失",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "acceptance": "AC-01: 打开 404 页面后，页面主要可见区域显示“404”标识。; AC-02: 打开页面后无需任何操作即可读到语义为“页面未找到/当前地址不存在”的中文提示文案。; AC-03: 页面提供“返回首页”入口，点击后浏览器离开 404 页面并前往首页目标地址（推荐基线：站点根路径）。; AC-04: 不运行任何服务端程序，直接用浏览器打开页面文件时，页面提示内容与样式完整显示。; AC-05: 页面在桌面浏览器中以清晰的排版与样式呈现，无布局错乱。",
+    "mandatoryAcceptance": [
+      {
+        "id": "AC-01",
+        "source": "requirements.md#AC-01",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-01"
+        ],
+        "evidenceKinds": [
+          "runtime-render"
+        ],
+        "evidence": "QA-01 浏览器记录 #1：页面主要可见区域显示清晰可读的“404”标识（112px/800，居中，在视口内）"
+      },
+      {
+        "id": "AC-02",
+        "source": "requirements.md#AC-02",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-01"
+        ],
+        "evidenceKinds": [
+          "runtime-render"
+        ],
+        "evidence": "QA-01 浏览器记录 #1：打开页面后无需操作即可读到 H1“页面未找到”及“当前地址不存在或已被移除…”中文提示"
+      },
+      {
+        "id": "AC-03",
+        "source": "requirements.md#AC-03",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-01"
+        ],
+        "evidenceKinds": [
+          "interaction"
+        ],
+        "evidence": "QA-01 浏览器记录 #1：点击“返回首页”后浏览器离开 /404.html，前往页面声明的首页目标地址（站点根路径 /）"
+      },
+      {
+        "id": "AC-04",
+        "source": "requirements.md#AC-04",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-02"
+        ],
+        "evidenceKinds": [
+          "runtime-render"
+        ],
+        "evidence": "QA-02 浏览器记录 #2：以 file:// 直接打开页面文件（无任何服务端）时，提示内容与样式完整显示，无外部依赖"
+      },
+      {
+        "id": "AC-05",
+        "source": "requirements.md#AC-05",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-01"
+        ],
+        "evidenceKinds": [
+          "visual-style"
+        ],
+        "evidence": "QA-01 浏览器记录 #1：布局居中、无元素重叠、间距正常，关键样式（背景/字体/按钮）实测正确应用，无布局错乱"
+      }
+    ],
+    "riskLabels": [],
+    "verificationTypes": [
+      "browser-ui"
+    ]
+  },
+  "defects": [],
+  "skippedChecks": [],
+  "residualRisks": [],
+  "baselineUpdates": []
+}
