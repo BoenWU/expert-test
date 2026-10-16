@@ -1,0 +1,107 @@
+{
+  "summary": {
+    "objective": "验证 404 静态网页（404.html）满足已批准需求 AC-01～AC-04：首屏展示 404 标识与提示文案、返回首页入口可跳转、无服务端即可访问、桌面浏览器正常渲染",
+    "changedBehavior": "交付纯静态 404 页面：单文件 HTML + 内联 CSS，无脚本、无外部资源、无服务端依赖，可静态托管或以本地文件方式打开",
+    "nonGoals": [
+      "服务端逻辑、动态路由、服务端返回 404 状态码",
+      "移动端/窄屏适配",
+      "多语言/国际化",
+      "自动倒计时跳转、站内搜索等额外恢复手段"
+    ],
+    "riskLabels": ["browser-compat"]
+  },
+  "environment": {
+    "name": "桌面浏览器验收环境（agent_browser，Chromium 内核）",
+    "version": "Chrome/114.0.5735.248（Windows NT 10.0）",
+    "dataProfile": "纯静态页面，无数据、无账号、无种子数据；QA 本轮自建静态服务伺服工作区根目录（http://127.0.0.1:51879/404.html），另以 file:// 本地文件方式直接打开"
+  },
+  "checks": [
+    {
+      "checkId": "QA-01",
+      "status": "passed",
+      "evidence": "本 QA 会话浏览器实测（服务 http://127.0.0.1:51879/404.html）：打开页面后 h1 文本“404”以 108px/700 首屏可见（视口 709×944，元素 top=307，无需滚动），简体中文提示“抱歉，您访问的页面不存在”与辅助说明文案完整、无乱码；随后点击“返回首页”入口，浏览器从 /404.html 跳转到站点首页地址 /，落地页面正常渲染。",
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "本 QA 会话浏览器实测记录 #1（agent_browser，http://127.0.0.1:51879/404.html，作业 4823efd4-e19e-4d0e-9505-67ad5041abb7）"
+      },
+      "assertions": [
+        {
+          "planIndex": 0,
+          "actual": "首屏 h1“404”108px 加粗可见（元素 top=307，视口 709×944，无需滚动），提示文案“抱歉，您访问的页面不存在”完整显示，另有一行地址失效说明，文字无乱码",
+          "status": "passed"
+        },
+        {
+          "planIndex": 1,
+          "actual": "点击“返回首页”入口后，浏览器 URL 由 http://127.0.0.1:51879/404.html 跳转至 http://127.0.0.1:51879/，落地页面正常渲染",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "checkId": "QA-02",
+      "status": "passed",
+      "evidence": "以本地文件方式 file:///C:/Users/kingdee/lingeebuild-beta/workspaces/ac41cddea909249846a509ac77a4c536/测试项目-03/.lingee-task-worktrees/wi-t1000219/404.html 直接打开，无任何服务端参与：标题“页面不存在（404）”，404 标识、提示文案、“返回首页”入口（href=/）齐全，白底卡片 12px 圆角、108px 错误码、144×46 按钮样式完整，无横向滚动，控制台无消息。",
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "本 QA 会话浏览器实测记录 #2（agent_browser，file:// 打开 404.html）"
+      },
+      "assertions": [
+        {
+          "planIndex": 0,
+          "actual": "file:// 打开后 404 标识、提示文案、返回首页入口均正常呈现，内联样式完整生效（卡片白底 12px 圆角、错误码 108px、按钮 144×46），无横向滚动，控制台无报错，全过程无需服务端参与",
+          "status": "passed"
+        }
+      ]
+    },
+    {
+      "checkId": "QA-03",
+      "status": "passed",
+      "evidence": "桌面浏览器实测（UA: Chrome/114.0.5735.248，视口 709×944）：scrollWidth=clientWidth=709 无横向滚动，scrollHeight=clientHeight=944 一屏完整；元素垂直排列无重叠（404 标识 307-420、标题 467-499、说明 511-559、按钮 591-637，卡片 258-686 均在视口内）；样式：卡片白底 12px 圆角居中、404 为 108px/700 深色、按钮蓝底白字 144×46；控制台无任何消息。",
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "本 QA 会话浏览器实测记录 #1/#3（agent_browser getComputedStyle/getBoundingClientRect/console）"
+      },
+      "assertions": [
+        {
+          "planIndex": 0,
+          "actual": "Chrome/114（Chromium 内核）中 404 标识、提示文案与返回首页入口渲染完整，无横向滚动、无元素遮挡，控制台无报错",
+          "status": "passed"
+        },
+        {
+          "planIndex": 1,
+          "actual": "卡片白底 12px 圆角居中、错误码 108px/700、入口按钮蓝底白字 144×46 且水平居中，基础样式已应用",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "AC-01",
+      "status": "met",
+      "evidence": "QA-01 断言 1：首屏“404”标识 108px 可见 + 简体中文提示文案完整（浏览器实测）"
+    },
+    {
+      "id": "AC-02",
+      "status": "met",
+      "evidence": "QA-01 断言 2：点击“返回首页”后跳转到站点首页地址 /（浏览器实测）"
+    },
+    {
+      "id": "AC-03",
+      "status": "met",
+      "evidence": "QA-02：file:// 本地文件方式打开，页面功能完整可用，无服务端参与（浏览器实测）"
+    },
+    {
+      "id": "AC-04",
+      "status": "met",
+      "evidence": "QA-03：Chromium 内核桌面浏览器渲染正常、无横向滚动/遮挡、控制台无报错、基础样式已应用（浏览器实测）"
+    }
+  ],
+  "residualRisks": [
+    "Firefox（Gecko 内核）当前稳定版未实测：本环境仅提供 Chromium 内核浏览器；Chrome/Edge 同内核渲染已在 Chrome/114 实测通过，Firefox 兼容性未覆盖"
+  ],
+  "decision": "pass-with-risk"
+}
