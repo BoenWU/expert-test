@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "implementation:3",
+  "receiptType": "implementation-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "implementation",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:636e806738f92b8f4eedd57100c90e5ae7ef1a887dfde0b022e03c534daa8cd6",
+  "createdAt": "2026-10-16T07:46:49.651Z",
+  "timing": {
+    "startedAt": "2026-10-16T07:39:47.514Z",
+    "completedAt": "2026-10-16T07:46:49.651Z",
+    "durationMs": 422137
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000219/implementation-report.md",
+      "bytes": 5294,
+      "sha256": "sha256:a3250f4b46703b6f6b00d9ca0f45dab10b5baf99acd528b73d56720e8bb10b10",
+      "title": "实现报告：404 静态网页"
+    }
+  ],
+  "url": "http://127.0.0.1:65030/404.html",
+  "verification": [
+    {
+      "checkId": "implementation:completion",
+      "status": "passed"
+    },
+    {
+      "checkId": "implementation:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline",
+        "sha256": "sha256:365b8be1e29e4632ab7fb9d035c6249c7cd3e8e12ec2f6dc44c1fb2c02ac37bb",
+        "path": ".expert-team\\work-items\\wi-t1000219\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
