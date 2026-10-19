@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 · 页面未找到</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { height: 100%; }
+  body {
+    height: 100%;
+    font-family: "Segoe UI", "Microsoft YaHei", "PingFang SC", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+    background: #f4f5f7;
+    color: #1f2329;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 24px;
+  }
+  .status-code {
+    font-size: 112px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.06em;
+    color: #dbe0ea;
+    -webkit-text-stroke: 2px #a8b3c7;
+    user-select: none;
+  }
+  .title {
+    margin-top: 28px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1f2329;
+  }
+  .description {
+    margin-top: 12px;
+    max-width: 480px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #646a73;
+  }
+  .back-home {
+    display: inline-block;
+    margin-top: 36px;
+    padding: 11px 32px;
+    border-radius: 6px;
+    background: #2b5fd9;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  .back-home:hover,
+  .back-home:focus-visible {
+    background: #1f49bd;
+  }
+  .back-home:focus-visible {
+    outline: 2px solid #2b5fd9;
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+  <main class="page">
+    <p class="status-code">404</p>
+    <h1 class="title">页面未找到</h1>
+    <p class="description">您访问的页面不存在或已被移除。请检查地址是否正确，或返回首页继续浏览。</p>
+    <a class="back-home" href="index.html">返回首页</a>
+  </main>
+</body>
+</html>
