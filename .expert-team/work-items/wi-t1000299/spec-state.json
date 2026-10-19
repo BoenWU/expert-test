@@ -2,14 +2,41 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 14,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "deliveryProfile": "standard",
   "graphRevision": 5,
   "graphHash": "sha256:2a57c363d9373645b17d5b6c69980060de84b107d719f5358c096d8adc5cce44",
-  "updatedAt": "2026-10-19T01:44:51.631Z"
+  "updatedAt": "2026-10-19T01:49:32.042Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000299/requirements.md",
+      "sha256": "sha256:3327f5b64830447481f66eb7d7e9784365ffb8b3e28840fc859a9cdcd532e51e"
+    },
+    "reason": "批准需求快照明确交付纯静态 404 页面：全部内容随页面文件本身交付，浏览器直接打开本地文件即可完整渲染（FR-M1-3、NF-01、NF-02、AC-03），不存在服务端程序、权威数据库、认证、后台任务、外部集成或跨用户/跨设备共享数据的任何需求，且范围章节明确排除这些能力，无歧义点。",
+    "evidence": {
+      "supporting": [
+        "FR-M1-3：页面为可独立渲染的静态页面，全部内容随页面文件本身交付，不在运行时从服务端获取。",
+        "NF-01（用户约束）：交付物为纯静态网页，不需要服务端；内容、样式与交互不依赖任何后端程序、API 或服务端运行时。",
+        "NF-02（用户约束）：页面可通过浏览器直接打开静态文件正常查看。",
+        "AC-03：在未启动任何服务端程序的环境下直接以本地文件方式打开页面，页面完整渲染 404 提示与返回入口。",
+        "场景 J2：无服务端直接打开，仅本地静态文件可用时页面正常渲染。"
+      ],
+      "excluding": [
+        "需求第 5 章明确排除：服务端重定向、服务端下发 404 状态码逻辑、后端接口与动态渲染。",
+        "无权威数据库、无认证、无后台任务、无外部服务集成、无跨用户/跨设备数据同步的需求或证据。",
+        "无移动端适配、多语言、SEO、统计埋点等额外需求。"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-10-19T01:47:21.788Z",
+    "sha256": "sha256:ca079b43e44471b4e130ae09b06d3d108a04335ae366386bfe02c992921bf569"
+  }
 }
