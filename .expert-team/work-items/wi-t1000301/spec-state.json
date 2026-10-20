@@ -2,14 +2,47 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 14,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "deliveryProfile": "standard",
   "graphRevision": 5,
   "graphHash": "sha256:2a57c363d9373645b17d5b6c69980060de84b107d719f5358c096d8adc5cce44",
-  "updatedAt": "2026-10-20T01:27:37.614Z"
+  "updatedAt": "2026-10-20T01:32:11.412Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000301/requirements.md",
+      "sha256": "sha256:26468574ac8ac5b37158878dc13ba3dd6df72f41196fc4d8787c8d310f66981c"
+    },
+    "reason": "批准需求快照明确交付一个纯静态 502 错误页面：无服务端、无数据库、无认证、无后台任务、无外部集成、无跨用户/设备数据同步；页面直接在浏览器中打开即可完整展示（BR-01/BR-03/NFR-01），需求第 6 章将服务端实现、运维上报等明确列为范围外，属于 simple-frontend。",
+    "evidence": {
+      "supporting": [
+        "requirements.md §1：本工作项交付一个 502 静态错误页面，不依赖任何服务端，可直接在浏览器中打开查看",
+        "requirements.md §3：本页面为无状态的静态展示页，不存在对象生命周期与状态转换",
+        "requirements.md §3 BR-01：页面内容为固定静态内容，不依赖任何服务端接口、数据或会话",
+        "requirements.md §3 BR-03：页面不包含任何需要服务端才能完成的功能（登录、数据加载、表单提交等）",
+        "requirements.md §3 BR-04：核心内容不依赖外部网络资源即可完整展示",
+        "requirements.md §5 NFR-01：页面以静态文件交付，在浏览器中直接打开该文件即可完整查看，无需启动任何服务端程序",
+        "requirements.md §5 NFR-02：页面打开后无需额外操作即可看到完整错误提示，核心内容加载不依赖用户交互",
+        "requirements.md §6：服务端实现、网关配置与部署接线、错误事件上报/日志/监控、多语言与可配置文案均明确在范围外"
+      ],
+      "excluding": [
+        "无服务端需求：用户明确陈述“不需要服务端”，§6 将服务端实现与部署接线列为范围外",
+        "无权威数据库需求：无状态静态展示页，不存在数据持久化与共享数据",
+        "无认证需求：BR-03 明确页面不含登录等需服务端完成的功能",
+        "无后台任务需求：需求未声明任何后台处理或定时任务",
+        "无外部集成需求：BR-04 要求核心内容不依赖外部网络资源，页面不发起任何服务端请求",
+        "无跨用户/设备同步需求：无状态展示页，无共享数据或会话"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-10-20T01:29:43.758Z",
+    "sha256": "sha256:001e4a56a3f2514968f856af3d74b86e3c615e679f267e8a534161fef1675201"
+  }
 }
