@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000301",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一个502静态页面，不需要服务端",
+  "request": "实现一个502静态页面，不需要服务端",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-10-20T01:25:12.690Z"
+}

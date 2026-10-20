@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:6d28357c48853973493b07799b8760af0d20220f89d63afbfe45dd310a9d9f20",
+  "createdAt": "2026-10-20T01:27:37.614Z",
+  "timing": {
+    "startedAt": "2026-10-20T01:25:13.035Z",
+    "completedAt": "2026-10-20T01:27:37.614Z",
+    "durationMs": 144579
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000301/requirements.md",
+      "bytes": 5396,
+      "sha256": "sha256:26468574ac8ac5b37158878dc13ba3dd6df72f41196fc4d8787c8d310f66981c",
+      "title": "502 静态错误页面需求文档"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}
