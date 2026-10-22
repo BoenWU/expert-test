@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000340",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一个404静态网页，不需要服务端",
+  "request": "实现一个404静态网页，不需要服务端",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-10-22T11:51:29.013Z"
+}
