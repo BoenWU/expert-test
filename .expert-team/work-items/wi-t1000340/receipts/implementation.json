@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "implementation:3",
+  "receiptType": "implementation-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "implementation",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:619db529d70b90da6377e829956100d1ca3f3fd3637eeaea599551376d990381",
+  "createdAt": "2026-10-22T12:11:58.949Z",
+  "timing": {
+    "startedAt": "2026-10-22T12:07:28.773Z",
+    "completedAt": "2026-10-22T12:11:58.949Z",
+    "durationMs": 270176
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000340/implementation-report.md",
+      "bytes": 4800,
+      "sha256": "sha256:4c67587ff342a0e414f1dcb853f76fb5fb48b62491837edc78adee26d15aceca",
+      "title": "404 静态网页 · 实现报告"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "implementation:completion",
+      "status": "passed"
+    },
+    {
+      "checkId": "implementation:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline",
+        "sha256": "sha256:dee063f3e39b6a734eef6554f89c05d0431dc6d119fa3d1d1ef46202b0d0c418",
+        "path": ".expert-team\\work-items\\wi-t1000340\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
