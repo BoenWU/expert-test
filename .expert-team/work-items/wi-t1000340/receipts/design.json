@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:bdf3ab0af03220d7fc2300764824c76e266120ba5aa4ca64d67e04b96acbf6f4",
+  "createdAt": "2026-10-22T11:57:19.240Z",
+  "timing": {
+    "startedAt": "2026-10-22T11:55:44.529Z",
+    "completedAt": "2026-10-22T11:57:19.239Z",
+    "durationMs": 94710
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000340/architecture-baseline.md",
+      "bytes": 2896,
+      "sha256": "sha256:01c9264ce23b0a148d8f8f3442681b2a3304eb36481f4499e3632dd568d173d9",
+      "title": "404 静态网页架构基线"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "design:completion",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:dee063f3e39b6a734eef6554f89c05d0431dc6d119fa3d1d1ef46202b0d0c418",
+        "path": ".expert-team\\work-items\\wi-t1000340\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
