@@ -1,0 +1,47 @@
+# 验证报告
+
+## 验证结论
+
+pass-with-risk
+
+## 摘要
+
+验证服务访问 500 静态错误网页的冻结验收 AC-01：浏览器直接打开页面可见 HTTP 500（服务器内部错误）语义提示，页面自包含、不依赖服务端。
+
+变更行为：新建自包含静态 500 错误页 public/500.html（本轮验证范围内的唯一交付变更）：内联样式、无脚本、无外部资源、含状态码 500、标题与错误含义说明。
+
+非目标：
+- 页面文案具体措辞、视觉风格、返回首页入口、托管与部署方式（需求 §2.3 未规定，不纳入验收）
+- 移动端验收（需求未要求，默认仅验收桌面视口）
+
+## 验证环境
+
+Windows 本地工作区 + 宿主预览浏览器（Chromium/Electron） Chrome/146.0.7680.188 Electron/41.2.1（User-Agent 实测）；无数据（纯静态展示页，无存储、无状态）
+
+## 验证检查
+
+| 检查项 | 类型 | 状态 | 证据 |
+|---|---|---|---|
+| QA-01 | browser-ui | passed | 浏览器实测：页面加载 readyState=complete 正常渲染，控制台错误 0 条、document.scripts.length=0；页面可见文本为「500 / 服务器内部错误 / 服务器在处理您的请求时遇到了内部错误，请稍后重试。/ 返回首页」，文档标题「500 · 服务器内部错误」；加载全程网络请求仅文档本身 1 条（GET http://127.0.0.1:4371/500.html，200，text/html，1808 字节，响应实体与 public/500.html SHA256 一致 97A9F37F68E6B057C2C77F838D2BE84C493334F8DB148E1C349CC4005CF7C783），无任何 CSS/JS/图片/字体/XHR 外部请求，页面呈现零服务端依赖；基本样式已应用（body 背景 #f5f7fa、flex 垂直水平居中，.code 110.44px/700/#0f172a，h1 25.1px/600，.home-link #1d4ed8 白字 136x45）；QA 复核源码无 <script>、无内联事件、无外部 CSS/字体/图片引用。<br>AC-01: 页面正常渲染（readyState=complete，无空白，控制台 0 错误，无脚本）；可见「500」及「服务器内部错误」「服务器在处理您的请求时遇到了内部错误，请稍后重试。」语义文案；加载期间网络请求仅文档本身 1 条、无任何外部资源请求，页面呈现不依赖任何服务端程序 (passed) |
+
+## 验收覆盖
+
+| 验收项 | 结果 | 证据 |
+|---|---|---|
+| AC-01 | met | QA-01 |
+
+## 缺陷
+
+- —
+
+## 未执行项
+
+- —
+
+## 剩余风险
+
+- 预览浏览器不支持 file:// 协议（open 两次均被拒 invalid preview browser url），AC-01 验证动作中的『浏览器直接打开静态文件』经由与文件实体 SHA256 一致的静态文件入口完成渲染验证；页面自包含性已由『渲染期网络请求仅文档本身 + 源码无任何外部引用』证明，常规浏览器 file:// 直开无已知技术障碍（页面无脚本、无外部资源、无协议敏感特性），但该入口未在本轮工具中直接执行
+
+<!-- structured-report:v1
+{"decision":"pass-with-risk","summary":{"objective":"验证服务访问 500 静态错误网页的冻结验收 AC-01：浏览器直接打开页面可见 HTTP 500（服务器内部错误）语义提示，页面自包含、不依赖服务端。","changedBehavior":"新建自包含静态 500 错误页 public/500.html（本轮验证范围内的唯一交付变更）：内联样式、无脚本、无外部资源、含状态码 500、标题与错误含义说明。","nonGoals":["页面文案具体措辞、视觉风格、返回首页入口、托管与部署方式（需求 §2.3 未规定，不纳入验收）","移动端验收（需求未要求，默认仅验收桌面视口）"],"riskLabels":["browser-tool-file-protocol"]},"environment":{"name":"Windows 本地工作区 + 宿主预览浏览器（Chromium/Electron）","version":"Chrome/146.0.7680.188 Electron/41.2.1（User-Agent 实测）","dataProfile":"无数据（纯静态展示页，无存储、无状态）"},"verification":[{"checkId":"QA-01","type":"browser-ui","status":"passed","plan":[{"requirementId":"AC-01","kind":"runtime-render","action":"在浏览器中直接打开交付的 500 静态页面文件，观察页面渲染结果与展示内容。","expected":"1. 页面正常渲染，无空白页或脚本错误；"}],"evidence":"浏览器实测：页面加载 readyState=complete 正常渲染，控制台错误 0 条、document.scripts.length=0；页面可见文本为「500 / 服务器内部错误 / 服务器在处理您的请求时遇到了内部错误，请稍后重试。/ 返回首页」，文档标题「500 · 服务器内部错误」；加载全程网络请求仅文档本身 1 条（GET http://127.0.0.1:4371/500.html，200，text/html，1808 字节，响应实体与 public/500.html SHA256 一致 97A9F37F68E6B057C2C77F838D2BE84C493334F8DB148E1C349CC4005CF7C783），无任何 CSS/JS/图片/字体/XHR 外部请求，页面呈现零服务端依赖；基本样式已应用（body 背景 #f5f7fa、flex 垂直水平居中，.code 110.44px/700/#0f172a，h1 25.1px/600，.home-link #1d4ed8 白字 136x45）；QA 复核源码无 \u003cscript\u003e、无内联事件、无外部 CSS/字体/图片引用。","observation":{"method":"browser","actor":"expert","reference":"浏览器记录 #1：agent_browser 打开 127.0.0.1:4371/500.html（实现阶段登记的预览入口，返回实体与当前文件字节一致）后执行 snapshot -i / eval 读取渲染文本与计算样式 / errors 控制台检查 / network requests 请求清单"},"assertions":[{"requirementId":"AC-01","kind":"runtime-render","action":"在浏览器中直接打开交付的 500 静态页面文件，观察页面渲染结果与展示内容。","expected":"1. 页面正常渲染，无空白页或脚本错误；","actual":"页面正常渲染（readyState=complete，无空白，控制台 0 错误，无脚本）；可见「500」及「服务器内部错误」「服务器在处理您的请求时遇到了内部错误，请稍后重试。」语义文案；加载期间网络请求仅文档本身 1 条、无任何外部资源请求，页面呈现不依赖任何服务端程序","status":"passed"}]}],"coverage":{"acceptance":"AC-01: 访问者在浏览器中直接打开该静态网页文件（不经任何服务端），页面正常渲染，并显示 HTTP 500（服务器内部错误）语义的错误提示；页面呈现全程不依赖任何服务端程序。","mandatoryAcceptance":[{"id":"AC-01","source":"requirements.md#AC-01","surface":"user-interface","status":"met","checkIds":["QA-01"],"evidenceKinds":["runtime-render"],"evidence":"QA-01：浏览器实测页面渲染正常、500 语义提示可见；渲染期网络请求仅文档本身且源码零外部引用，页面以静态自包含方式完整呈现（QA 未启动任何新服务，复用实现阶段预览入口仅为查看通道且与文件实体字节一致），见浏览器记录 #1"}],"riskLabels":[],"verificationTypes":["browser-ui"]},"defects":[],"skippedChecks":[],"residualRisks":["预览浏览器不支持 file:// 协议（open 两次均被拒 invalid preview browser url），AC-01 验证动作中的『浏览器直接打开静态文件』经由与文件实体 SHA256 一致的静态文件入口完成渲染验证；页面自包含性已由『渲染期网络请求仅文档本身 + 源码无任何外部引用』证明，常规浏览器 file:// 直开无已知技术障碍（页面无脚本、无外部资源、无协议敏感特性），但该入口未在本轮工具中直接执行"],"baselineUpdates":[]}
+-->

@@ -4,8 +4,15 @@
   "workItemType": "initial-build",
   "title": "实现一个服务访问500静态网页\n\n实现一个服务访问500静态网页，不需要服务端",
   "request": "实现一个服务访问500静态网页\n\n实现一个服务访问500静态网页，不需要服务端",
-  "status": "active",
+  "status": "completed",
   "specId": "general-application-development-spec",
-  "revision": 0,
-  "createdAt": "2026-10-23T09:32:46.292Z"
+  "revision": 1,
+  "createdAt": "2026-10-23T09:32:46.292Z",
+  "completedAt": "2026-10-23T09:47:28.802Z",
+  "completion": {
+    "applicationRevision": 1,
+    "snapshotHash": "sha256:15bedfe14a9906ca0e576b041264a18e647f29caa8251410677bb886e0a5b4d3",
+    "completedAt": "2026-10-23T09:47:28.802Z"
+  },
+  "updatedAt": "2026-10-23T09:47:28.802Z"
 }

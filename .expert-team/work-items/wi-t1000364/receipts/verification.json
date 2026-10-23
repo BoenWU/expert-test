@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "verification:4",
+  "receiptType": "verification-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "verification",
+  "inputRevision": 3,
+  "stateVersion": 4,
+  "outcome": "passed",
+  "contentHash": "sha256:bbf648fc37b6aa4ca3e457aa78f7523e8328ffd9c21165ae5fdeccec739e3834",
+  "createdAt": "2026-10-23T09:47:28.704Z",
+  "timing": {
+    "startedAt": "2026-10-23T09:42:10.766Z",
+    "completedAt": "2026-10-23T09:47:28.703Z",
+    "durationMs": 317937
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000364/verification.md",
+      "bytes": 7456,
+      "sha256": "sha256:a316a0047a992e616826daaf2529277a9f99022c651a6e30fdabcb8c7c32c0e1",
+      "title": "验证报告"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "verification:completion",
+      "status": "passed"
+    },
+    {
+      "checkId": "verification:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline-browser",
+        "sha256": "sha256:5866d4e0de8fcde81cfdbc2721f9f969aa6d8af927859a6fd4cc8777a233e3ac",
+        "path": ".expert-team\\work-items\\wi-t1000364\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
