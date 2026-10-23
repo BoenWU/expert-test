@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:8dd7a3765943551fe6e0a0b9a409666981212f34650aa6df6b27da83e5e7e604",
+  "createdAt": "2026-10-23T09:33:47.910Z",
+  "timing": {
+    "startedAt": "2026-10-23T09:32:46.551Z",
+    "completedAt": "2026-10-23T09:33:47.910Z",
+    "durationMs": 61359
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000364/requirements.md",
+      "bytes": 1876,
+      "sha256": "sha256:927b4d7546c8af2d1c89307c4f1fd99d09e4c9a0c688c1e7ad73ad9475a13bf1",
+      "role": "requirements-baseline",
+      "purpose": "服务访问 500 静态网页的需求基线：目标、核心行为规则与验收场景",
+      "title": "需求文档：服务访问 500 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    },
+    {
+      "checkId": "coverage-check-user-goals",
+      "status": "passed"
+    },
+    {
+      "checkId": "scope-hygiene-check",
+      "status": "passed"
+    }
+  ]
+}

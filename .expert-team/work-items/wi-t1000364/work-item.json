@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000364",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一个服务访问500静态网页\n\n实现一个服务访问500静态网页，不需要服务端",
+  "request": "实现一个服务访问500静态网页\n\n实现一个服务访问500静态网页，不需要服务端",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-10-23T09:32:46.292Z"
+}
