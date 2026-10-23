@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "implementation:3",
+  "receiptType": "implementation-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "implementation",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:96a42f2196cae2812b76b3b0f348af9f01eef84b5d5eed3295d96a965e311f7b",
+  "createdAt": "2026-10-23T07:22:44.822Z",
+  "timing": {
+    "startedAt": "2026-10-23T07:19:48.088Z",
+    "completedAt": "2026-10-23T07:22:44.822Z",
+    "durationMs": 176734
+  },
+  "artifacts": [
+    {
+      "path": "public/403.html",
+      "bytes": 1983,
+      "sha256": "sha256:38ee104cdc8587e8214df24bf9b535b9b9fea668ec39f939c31d7d59f8350ae8",
+      "role": "deliverable",
+      "purpose": "403 Forbidden 自包含静态页面：内联 CSS、无脚本、无外部资源、无服务端依赖，浏览器 file:// 直接打开即显示 403 禁止访问提示",
+      "title": "403 Forbidden · 禁止访问"
+    },
+    {
+      "path": "docs/wi-t1000358/implementation-report.md",
+      "bytes": 4007,
+      "sha256": "sha256:55b7f50029221fb2d50cf9407b928ba010c8a8919ec3b6835314a171b403ece1",
+      "role": "report",
+      "purpose": "实现阶段报告：变更行为、实现范围、AC 对应、开发验证证据与遗留风险",
+      "title": "403 Forbidden 静态网页 — 实现报告"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "doctype-html5",
+      "status": "passed"
+    },
+    {
+      "checkId": "meta-charset-utf8",
+      "status": "passed"
+    },
+    {
+      "checkId": "viewport-meta",
+      "status": "passed"
+    },
+    {
+      "checkId": "title-403",
+      "status": "passed"
+    },
+    {
+      "checkId": "lang-zh",
+      "status": "passed"
+    },
+    {
+      "checkId": "utf8-strict-decode",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-bom",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-script-tag",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-link-tag",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-external-url",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-src-attr",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-css-url-fn",
+      "status": "passed"
+    },
+    {
+      "checkId": "inline-style-block",
+      "status": "passed"
+    },
+    {
+      "checkId": "visible-403",
+      "status": "passed"
+    },
+    {
+      "checkId": "forbidden-copy",
+      "status": "passed"
+    },
+    {
+      "checkId": "denied-copy",
+      "status": "passed"
+    },
+    {
+      "checkId": "implementation:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline",
+        "sha256": "sha256:19e8554fdc5e1e647b665565ec63fc1e51711317ab6f81c0aa15adb6de124834",
+        "path": ".expert-team\\work-items\\wi-t1000358\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
