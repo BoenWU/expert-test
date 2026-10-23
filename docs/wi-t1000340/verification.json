@@ -1,0 +1,93 @@
+{
+  "decision": "pass-with-risk",
+  "summary": {
+    "objective": "验证 404 静态页面在无服务端条件下的渲染与返回首页交互（AC-01）",
+    "changedBehavior": "新增仓库根目录 404.html：自包含纯静态 404 页面，含显著 404 标识、简体中文「页面未找到」文案与唯一交互入口「返回首页」（href=\"/\"）",
+    "nonGoals": [
+      "移动端视口验收（需求未要求移动端）",
+      "真实站点部署形态验证（架构基线声明为可选承载方式，非验收必需）"
+    ],
+    "riskLabels": [
+      "file-url-equivalence"
+    ]
+  },
+  "environment": {
+    "name": "agent_browser 预览浏览器（实际可用视口 502x946）+ 本机 Node v24.15.0 临时静态服务 http://127.0.0.1:43841/ 原样承载交付文件 404.html",
+    "version": "Node v24.15.0；agent_browser 预览浏览器会话",
+    "dataProfile": "无数据（纯静态展示页，无客户端存储、无运行时数据、无认证）"
+  },
+  "verification": [
+    {
+      "checkId": "QA-01",
+      "type": "browser-ui",
+      "status": "passed",
+      "plan": [
+        {
+          "requirementId": "AC-01",
+          "kind": "runtime-render",
+          "action": "在浏览器中直接打开交付的 404 页面静态文件（file:// 方式，不启动任何服务端），观察页面渲染结果；点击页面上的\"返回首页\"入口。",
+          "expected": "1. 页面正常渲染，显著显示\"404\"标识与简体中文的\"页面未找到\"提示文案；"
+        },
+        {
+          "requirementId": "AC-01",
+          "kind": "interaction",
+          "action": "在浏览器中直接打开交付的 404 页面静态文件（file:// 方式，不启动任何服务端），观察页面渲染结果；点击页面上的\"返回首页\"入口。",
+          "expected": "1. 页面正常渲染，显著显示\"404\"标识与简体中文的\"页面未找到\"提示文案；"
+        }
+      ],
+      "evidence": "浏览器实测通过：经本机临时静态服务（http://127.0.0.1:43841/404.html，等效承载交付文件，未启动任何应用服务端）打开页面，404 标识以 110.44px/700 字重深色渲染，h1「页面未找到」与简体中文辅助说明完整显示；「返回首页」链接（href=\"/\"）可点击，点击后浏览器离开 404 页面并导航至站点根路径 /；页面零 script、零外部资源。",
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "agent_browser 会话记录：open http://127.0.0.1:43841/404.html → 快照（heading 页面未找到 level=1、link 返回首页）→ 只读 eval 读取渲染文本与 computed style → click 返回首页 → wait --url http://127.0.0.1:43841/ → 快照确认根路径页面渲染"
+      },
+      "assertions": [
+        {
+          "requirementId": "AC-01",
+          "kind": "runtime-render",
+          "action": "在浏览器中直接打开交付的 404 页面静态文件（file:// 方式，不启动任何服务端），观察页面渲染结果；点击页面上的\"返回首页\"入口。",
+          "expected": "1. 页面正常渲染，显著显示\"404\"标识与简体中文的\"页面未找到\"提示文案；",
+          "actual": "页面正常渲染：显著显示 404 标识（computed font-size 110.44px、font-weight 700、颜色 rgb(15,23,42)，元素 272x110px）与简体中文「页面未找到」标题（25.1px）及辅助说明「您访问的页面可能已被移动或不存在。」；body 背景 rgb(245,247,250)、flex 居中排版，内联样式全部生效，零 script、零外部资源，无样式回退缺失",
+          "status": "passed"
+        },
+        {
+          "requirementId": "AC-01",
+          "kind": "interaction",
+          "action": "在浏览器中直接打开交付的 404 页面静态文件（file:// 方式，不启动任何服务端），观察页面渲染结果；点击页面上的\"返回首页\"入口。",
+          "expected": "1. 页面正常渲染，显著显示\"404\"标识与简体中文的\"页面未找到\"提示文案；",
+          "actual": "「返回首页」入口存在且可点击（a 元素，href=\"/\"，蓝底白字按钮样式 136x45px）；点击后浏览器离开 404 页面，URL 由 http://127.0.0.1:43841/404.html 导航至站点根路径 http://127.0.0.1:43841/ 并渲染根路径页面",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "coverage": {
+    "acceptance": "AC-01: 以静态方式（直接打开文件）访问 404 页面，无需任何服务端即可看到 404 标识与页面未找到提示，且返回首页入口可用。",
+    "mandatoryAcceptance": [
+      {
+        "id": "AC-01",
+        "source": "requirements.md#AC-01",
+        "surface": "user-interface",
+        "status": "met",
+        "checkIds": [
+          "QA-01"
+        ],
+        "evidenceKinds": [
+          "runtime-render",
+          "interaction"
+        ],
+        "evidence": "QA-01 浏览器实测：渲染与交互断言均通过——404 标识与「页面未找到」简体中文文案显著呈现，「返回首页」入口可点击并导航至站点根路径 /，见 agent_browser 会话记录"
+      }
+    ],
+    "riskLabels": [],
+    "verificationTypes": [
+      "browser-ui"
+    ]
+  },
+  "defects": [],
+  "skippedChecks": [],
+  "residualRisks": [
+    "AC-01 声明的 file:// 直开方式因平台预览浏览器仅支持 http/https 无法直接实测，改以本机临时静态服务原样承载同一交付文件（无构建、无运行时改写）等效验证；交付文件零外部资源、零脚本，两种打开方式渲染行为一致，等效性风险低"
+  ],
+  "baselineUpdates": []
+}

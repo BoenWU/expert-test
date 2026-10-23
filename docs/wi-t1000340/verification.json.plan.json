@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "acceptance": [
+    {
+      "id": "AC-01",
+      "source": "requirements.md#AC-01",
+      "surface": "user-interface",
+      "evidenceKinds": [
+        "runtime-render",
+        "interaction"
+      ],
+      "checkIds": [
+        "QA-01"
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "checkId": "QA-01",
+      "type": "browser-ui",
+      "plan": [
+        {
+          "requirementId": "AC-01",
+          "kind": "runtime-render",
+          "action": "在浏览器中直接打开交付的 404 页面静态文件（file:// 方式，不启动任何服务端），观察页面渲染结果；点击页面上的\"返回首页\"入口。",
+          "expected": "1. 页面正常渲染，显著显示\"404\"标识与简体中文的\"页面未找到\"提示文案；"
+        },
+        {
+          "requirementId": "AC-01",
+          "kind": "interaction",
+          "action": "在浏览器中直接打开交付的 404 页面静态文件（file:// 方式，不启动任何服务端），观察页面渲染结果；点击页面上的\"返回首页\"入口。",
+          "expected": "1. 页面正常渲染，显著显示\"404\"标识与简体中文的\"页面未找到\"提示文案；"
+        }
+      ]
+    }
+  ]
+}
