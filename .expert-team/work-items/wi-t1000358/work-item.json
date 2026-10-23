@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000358",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现个403 forbidden静态网页\n\n实现个403 forbidden静态网页，不需要服务端",
+  "request": "实现个403 forbidden静态网页\n\n实现个403 forbidden静态网页，不需要服务端",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-10-23T07:15:57.404Z"
+}

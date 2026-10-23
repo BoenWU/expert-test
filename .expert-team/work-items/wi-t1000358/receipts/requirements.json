@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:667d618e14b8b73858ded39d6ca2242404173ec5009f092eceb6204bd9ac4ae7",
+  "createdAt": "2026-10-23T07:16:44.576Z",
+  "timing": {
+    "startedAt": "2026-10-23T07:15:57.678Z",
+    "completedAt": "2026-10-23T07:16:44.576Z",
+    "durationMs": 46898
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000358/requirements.md",
+      "bytes": 1548,
+      "sha256": "sha256:4e9a22ab651da3d5dd9462bd6d3c02ba8cb35912b2e0ec4e1dcbcceddb28fca2",
+      "role": "requirements",
+      "purpose": "403 Forbidden 静态网页的需求基线：目标、核心行为与规则、范围外排除项及验收场景",
+      "title": "403 Forbidden 静态网页需求"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}
