@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000362",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "帮我创建一张采购申请单\n\n在‘kdtest_meta_cover’下建一张采购申请单",
+  "request": "帮我创建一张采购申请单\n\n在‘kdtest_meta_cover’下建一张采购申请单",
+  "status": "active",
+  "specId": "cosmic-development-spec",
+  "revision": 0,
+  "createdAt": "2026-10-23T08:42:15.247Z"
+}

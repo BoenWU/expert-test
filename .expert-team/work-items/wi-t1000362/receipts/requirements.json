@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "cosmic-requirements",
+  "specId": "cosmic-development-spec",
+  "graphRevision": 13,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:75247efcb356033cc067bc5cd94ffbe94419f6c47651f97efbf1529fb1ad3216",
+  "createdAt": "2026-10-23T08:45:40.932Z",
+  "timing": {
+    "startedAt": "2026-10-23T08:42:15.517Z",
+    "completedAt": "2026-10-23T08:45:40.931Z",
+    "durationMs": 205414
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000362/requirements.md",
+      "bytes": 5105,
+      "sha256": "sha256:5376c7bea5a8d192fe414259f061c397cda6b49ee3256c36c53c7ea62cc60ef9",
+      "role": "primary",
+      "purpose": "采购申请单需求基线（cosmic-requirements-baseline/v1）",
+      "title": "采购申请单需求（kdtestmetacover）"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}
