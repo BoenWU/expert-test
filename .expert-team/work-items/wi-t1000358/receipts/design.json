@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:347d909ca69385e34aab60c8c57862377fd6308a54ce7439ec15ab806d78f46c",
+  "createdAt": "2026-10-23T07:18:43.189Z",
+  "timing": {
+    "startedAt": "2026-10-23T07:17:38.091Z",
+    "completedAt": "2026-10-23T07:18:43.189Z",
+    "durationMs": 65098
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000358/architecture-baseline.md",
+      "bytes": 2839,
+      "sha256": "sha256:bdf7a0851416fef0fb62f30c1a10a2ff70d2aacc2506894908921abeb789c412",
+      "role": "primary",
+      "purpose": "精简路线架构基线：引用批准需求快照，确定 simple-frontend 纯静态单文件承载方式，明确页面与交互范围、无数据归属、file:// 运行方式与技术边界",
+      "title": "403 Forbidden 静态网页 — 架构基线"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "architecture-baseline-written",
+      "status": "completed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:19e8554fdc5e1e647b665565ec63fc1e51711317ab6f81c0aa15adb6de124834",
+        "path": ".expert-team\\work-items\\wi-t1000358\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
