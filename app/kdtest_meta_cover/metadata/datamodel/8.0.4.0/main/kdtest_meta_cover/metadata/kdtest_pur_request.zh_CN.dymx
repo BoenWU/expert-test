@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeployMetadata>
+  <MasterId>64ZAX5Y8QJ1Y</MasterId>
+  <Id>64ZAX5Y8QJ1Y</Id>
+  <DesignMetas>
+    <DesignFormMetaL>
+      <Number>kdtest_pur_request</Number>
+      <PkId>64ZB6LGG7X2G</PkId>
+      <DataXml>
+        <FormMetadata/>
+      </DataXml>
+      <Name>采购申请单</Name>
+      <Id>64ZAX5Y8QJ1Y</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignFormMetaL>
+    <DesignEntityMetaL>
+      <Number>kdtest_pur_request</Number>
+      <PkId>64ZB6LMTWZHH</PkId>
+      <DataXml>
+        <EntityMetadata/>
+      </DataXml>
+      <Name>采购申请单</Name>
+      <Id>64ZAX5Y8QJ1Y</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignEntityMetaL>
+  </DesignMetas>
+  <Version>1792745627197</Version>
+  <BOSVersion>1.0</BOSVersion>
+</DeployMetadata>

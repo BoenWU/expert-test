@@ -1,0 +1,41 @@
+{
+  "environmentFile": "C:\\Users\\kingdee\\lingeebuild-beta\\workspaces\\ac41cddea909249846a509ac77a4c536\\测试项目-03\\.lingee-task-worktrees\\wi-t1000362\\app\\kdtest_meta_cover\\_runtime\\test-environment.json",
+  "completed": [
+    {
+      "itemId": "FR-1",
+      "evidence": [
+        "runBatch 写入及回读验证通过 1/1（表单 kdtest_pur_request，formId 64ZAX5Y8QJ1Y，实体与字段共 11 项验证通过）",
+        "表头自定义字段：申请日期、申请人、申请组织、备注；分录字段：物料编码、物料名称、计量单位、数量、期望到货日期（创建回读验证通过）",
+        "保存操作必填校验已启用（MustInputValidation enabled，verified=true）"
+      ]
+    },
+    {
+      "itemId": "FR-2",
+      "evidence": [
+        "采用标准单据模板（bos_billtpl），预置保存/提交/审核生命周期操作，单据编号为模板预置手工编码",
+        "保存操作回读 verified=true（operationType=save）；提交操作必填校验模板已启用（already enabled，verified=true）"
+      ]
+    },
+    {
+      "itemId": "H-1",
+      "evidence": [
+        "表头字段申请日期/申请人/申请组织/备注创建并回读验证",
+        "申请日期默认当天（getToday 设计默认值）、单据编号必填（MustInput）属性设置验证通过（verifiedPropertyCount=2）"
+      ]
+    },
+    {
+      "itemId": "H-2",
+      "evidence": [
+        "分录字段物料编码/物料名称/计量单位/数量/期望到货日期创建并回读验证",
+        "保存时数量大于 0 校验写入并验证（ConditionValidation：kdtest_quantity <= 0 阻断，TrueThrow，消息\"数量必须大于 0\"，verified=true）"
+      ]
+    }
+  ],
+  "summary": "已在 kdtest_meta_cover 应用下创建采购申请单：表头含申请日期（默认当天）、申请人、申请组织、备注，明细含物料编码、物料名称、计量单位、数量、期望到货日期；单据编号按标准单据手工编码并设为必填，保存时执行必填检查并校验数量大于 0，按标准单据保存→提交→审核流转。全部元数据写入均已回读验证。",
+  "notes": [
+    "单据编号、单据状态由标准单据模板预置（手工编码，未配置自动编号规则）",
+    "计量单位采用计量单位引用字段以配套数量字段（数量字段平台契约要求计量单位引用），相对需求假设中的文本为最小必要适配，已记录于建模输入假设",
+    "业务运行行为（录入保存后回读、提交与审核流转）尚未在运行环境执行，运行态验收待质量阶段",
+    "DYM 源码同步以后台任务启动，未等待其完成"
+  ]
+}

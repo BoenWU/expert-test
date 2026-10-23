@@ -5,6 +5,11 @@
       "startedAt": "2026-10-23T08:42:15.517Z",
       "completedAt": "2026-10-23T08:45:40.931Z",
       "durationMs": 205414
+    },
+    "app-build": {
+      "startedAt": "2026-10-23T08:46:37.427Z",
+      "completedAt": "2026-10-23T08:55:27.651Z",
+      "durationMs": 530224
     }
   }
 }
