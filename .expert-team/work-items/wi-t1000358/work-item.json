@@ -4,8 +4,15 @@
   "workItemType": "initial-build",
   "title": "实现个403 forbidden静态网页\n\n实现个403 forbidden静态网页，不需要服务端",
   "request": "实现个403 forbidden静态网页\n\n实现个403 forbidden静态网页，不需要服务端",
-  "status": "active",
+  "status": "completed",
   "specId": "general-application-development-spec",
-  "revision": 0,
-  "createdAt": "2026-10-23T07:15:57.404Z"
+  "revision": 1,
+  "createdAt": "2026-10-23T07:15:57.404Z",
+  "completedAt": "2026-10-23T07:31:23.033Z",
+  "completion": {
+    "applicationRevision": 1,
+    "snapshotHash": "sha256:20f9caf1512c463ffb72b7a779792a446c5dd63fc4351508c2e7f72ace181e48",
+    "completedAt": "2026-10-23T07:31:23.033Z"
+  },
+  "updatedAt": "2026-10-23T07:31:23.033Z"
 }

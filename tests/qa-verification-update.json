@@ -1,0 +1,53 @@
+{
+  "summary": {
+    "objective": "验证 403 Forbidden 静态网页交付物满足 AC-01：在无服务端进程依赖的情况下，浏览器直接打开交付的 HTML 文件即可完整渲染 403 禁止访问提示。",
+    "changedBehavior": "新增纯静态自包含单文件页面 public/403.html：浏览器打开即渲染大号暗红 403 标识、\"禁止访问 Forbidden\" 标题与说明文案，无脚本、无外部资源、无网络请求。",
+    "nonGoals": [
+      "服务端程序、API 或数据存储（需求明确排除）",
+      "移动端视口专项验收（需求与冻结计划未要求，仅记录桌面视口 502×706）"
+    ],
+    "riskLabels": [
+      "预览浏览器不支持 file:// 协议，file:// 打开路径未直接自动化"
+    ]
+  },
+  "environment": {
+    "name": "本地 Windows 工作树 + 本轮 QA 临时静态服务（http://127.0.0.1:41731/403.html，仅承载交付原文件渲染，验收后已停止）",
+    "version": "金蝶灵基预览浏览器（Electron 41.2.1 / Chromium 146.0.7680.188，Chrome 引擎），桌面视口 502×706",
+    "dataProfile": "无数据：纯静态展示页，无 localStorage/Cookie/IndexedDB，无种子数据"
+  },
+  "checks": [
+    {
+      "checkId": "QA-01",
+      "status": "passed",
+      "evidence": "浏览器记录 #1：在真实浏览器（Chrome 引擎，视口 502×706）中打开交付原文件 public/403.html 的渲染副本 http://127.0.0.1:41731/403.html（本轮 QA 临时本地静态服务承载；预览浏览器不支持 file:// 协议，原始与 URL 编码两种地址各尝试一次均报 invalid preview browser url）。页面完整渲染非空白：正文全文回读为 403 / 禁止访问 Forbidden / 说明与提示两行文案；控制台 0 条错误；网络面板仅 1 条请求（HTML 文档自身，无任何外部子资源加载）。",
+      "observation": {
+        "method": "browser",
+        "actor": "expert",
+        "reference": "浏览器记录 #1：agent_browser open / snapshot -i / get text main / errors / network requests / eval（getComputedStyle + getBoundingClientRect）@ http://127.0.0.1:41731/403.html"
+      },
+      "assertions": [
+        {
+          "planIndex": 0,
+          "actual": "页面正常渲染、非空白：get text main 全文回读包含大号 \"403\" 标识、\"禁止访问 Forbidden\" 标题及两行说明文案；控制台 0 条错误（页面无任何脚本）；网络请求仅 1 条文档自身（GET /403.html，200，text/html; charset=utf-8）。",
+          "status": "passed"
+        },
+        {
+          "planIndex": 1,
+          "actual": "内联样式全部生效：body 背景 rgb(246,247,249)（#f6f7f9）+ flex 垂直水平居中；.status-code 颜色 rgb(198,47,47)（#c62f2f）、字号 120.48px（clamp(96px,24vw,192px) 在 502px 视口的正确计算值）、字重 700、盒尺寸 448×120；.status-title 25.1px/字重 600；.divider 64×4px 暗红且水平居中于面板中线；.description 16px、.hint 14px 构成文字层次；全部元素位于视口内且尺寸非零。",
+          "status": "passed"
+        }
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "id": "AC-01",
+      "status": "met",
+      "evidence": "QA-01（浏览器记录 #1）：真实浏览器完整渲染出 403 禁止访问提示——内容齐全、无脚本错误、样式计算值与源码设计一致；运行时网络仅加载文档自身，与实现阶段静态自包含校验（无 script/link/src/url()/外部 URL）相互印证页面不依赖任何服务端。file:// 协议路径因预览浏览器工具限制未直接自动化，以同一原文件的本地静态服务渲染为等效证据（见剩余风险）。"
+    }
+  ],
+  "residualRisks": [
+    "预览浏览器不支持 file:// 协议（原始与 URL 编码两种地址各尝试一次，均报 invalid preview browser url），用户本地以浏览器直接打开 file:// 文件的最终路径未由自动化工具直接执行；因页面无脚本、无任何外部引用（不存在协议相关行为），已以同一原文件的本地静态服务渲染 + 静态自包含校验等效覆盖，风险仅限工具路径本身。"
+  ],
+  "decision": "pass-with-risk"
+}
