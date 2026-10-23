@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "implementation:3",
+  "receiptType": "implementation-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "implementation",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:038465f274a0d9910019224f54db8711ffecea4baecccceb7795cd6132e2375d",
+  "createdAt": "2026-10-23T09:41:21.613Z",
+  "timing": {
+    "startedAt": "2026-10-23T09:37:08.598Z",
+    "completedAt": "2026-10-23T09:41:21.613Z",
+    "durationMs": 253015
+  },
+  "artifacts": [
+    {
+      "path": "public/500.html",
+      "bytes": 1808,
+      "sha256": "sha256:97a9f37f68e6b057c2c77f838d2be84c493334f8db148e1c349cc4005cf7c783",
+      "role": "application-source",
+      "purpose": "自包含 HTTP 500 服务器内部错误静态网页：状态码 500、错误标题与说明、内联样式、无脚本无外链，浏览器直接打开即可完整呈现",
+      "title": "500 · 服务器内部错误"
+    },
+    {
+      "path": "docs/wi-t1000364/implementation-report.md",
+      "bytes": 3946,
+      "sha256": "sha256:d4acaa53097449353b1b090d762350ed90b4476e6cac3077ee2a5aec529edd54",
+      "role": "implementation-report",
+      "purpose": "实现报告：变更行为、实现范围、开发验证证据与遗留风险",
+      "title": "实现报告：服务访问 500 静态网页"
+    }
+  ],
+  "url": "http://127.0.0.1:4371/500.html",
+  "verification": [
+    {
+      "checkId": "file-delivered",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-script-tag",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-external-refs",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-inline-handlers",
+      "status": "passed"
+    },
+    {
+      "checkId": "style-inline",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-image-assets",
+      "status": "passed"
+    },
+    {
+      "checkId": "doctype",
+      "status": "passed"
+    },
+    {
+      "checkId": "html-lang",
+      "status": "passed"
+    },
+    {
+      "checkId": "charset-utf8",
+      "status": "passed"
+    },
+    {
+      "checkId": "viewport",
+      "status": "passed"
+    },
+    {
+      "checkId": "title-500",
+      "status": "passed"
+    },
+    {
+      "checkId": "head-body-html-closed",
+      "status": "passed"
+    },
+    {
+      "checkId": "tag-balance",
+      "status": "passed"
+    },
+    {
+      "checkId": "status-code-500",
+      "status": "passed"
+    },
+    {
+      "checkId": "heading-server-error",
+      "status": "passed"
+    },
+    {
+      "checkId": "description-server-error",
+      "status": "passed"
+    },
+    {
+      "checkId": "preview-server-reachable",
+      "status": "passed"
+    },
+    {
+      "checkId": "implementation:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline",
+        "sha256": "sha256:5866d4e0de8fcde81cfdbc2721f9f969aa6d8af927859a6fd4cc8777a233e3ac",
+        "path": ".expert-team\\work-items\\wi-t1000364\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
