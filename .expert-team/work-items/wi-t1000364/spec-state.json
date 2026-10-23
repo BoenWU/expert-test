@@ -2,14 +2,42 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 14,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "deliveryProfile": "standard",
   "graphRevision": 5,
   "graphHash": "sha256:9c3f304cfbb65de471791c872bf851dad3a7099e6db2e677caa20833d98192dd",
-  "updatedAt": "2026-10-23T09:33:47.910Z"
+  "updatedAt": "2026-10-23T09:36:19.749Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000364/requirements.md",
+      "sha256": "sha256:927b4d7546c8af2d1c89307c4f1fd99d09e4c9a0c688c1e7ad73ad9475a13bf1"
+    },
+    "reason": "该需求是一个纯静态 HTTP 500 错误提示页面：需求明确要求页面自包含（内容与样式随页面文件本身提供）、不依赖任何后端服务或服务端程序，浏览器直接打开即可完整呈现。全部需求仅为一条静态错误页的渲染语义，无数据存储、无服务端权威数据、无认证/权限、无后台任务、无外部集成、无跨用户/设备共享，完全符合 simple-frontend 路线的判定条件。",
+    "evidence": {
+      "supporting": [
+        "需求 §2.2 明确『纯静态、无服务端』：页面以自包含静态资源交付（内容与样式随页面文件本身提供），不依赖任何后端服务、服务端渲染或服务端程序",
+        "需求 §2.1 页面行为仅是呈现 HTTP 500『服务器内部错误』语义提示，无任何数据读写、状态管理需求",
+        "需求 §3 AC-01 验证动作为在浏览器中直接打开静态文件即可完整呈现，验证过程不启动、不依赖任何服务端",
+        "需求 §2.3 明确托管与部署方式等均未规定，由实现阶段自行决定，不引入服务端约束"
+      ],
+      "excluding": [
+        "需求无任何服务端权威数据或数据库要求（规则1仅要求500错误语义提示，无持久化需求）",
+        "需求无认证、权限或账号体系要求",
+        "需求无后台任务、定时作业或异步处理要求",
+        "需求无外部服务集成或第三方 API 要求",
+        "需求无跨用户、跨设备或共享数据要求"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-10-23T09:35:04.720Z",
+    "sha256": "sha256:5866d4e0de8fcde81cfdbc2721f9f969aa6d8af927859a6fd4cc8777a233e3ac"
+  }
 }

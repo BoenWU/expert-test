@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:1e4adadf64768bd4787ac3a652d515ecf97fab65d2ba3968787aa551db91c06b",
+  "createdAt": "2026-10-23T09:36:19.749Z",
+  "timing": {
+    "startedAt": "2026-10-23T09:34:43.165Z",
+    "completedAt": "2026-10-23T09:36:19.749Z",
+    "durationMs": 96584
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000364/architecture-baseline.md",
+      "bytes": 3231,
+      "sha256": "sha256:b1c5f8fdac2f35495cc0ecb74f93a1a02123dec59e7d69c67fc97a4e7fb11f0e",
+      "role": "primary",
+      "purpose": "服务访问500静态网页的架构基线：单文件自包含静态HTML承载500错误语义提示，无状态、无服务端、无构建，浏览器直接打开即可呈现",
+      "title": "架构基线：服务访问 500 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    },
+    {
+      "checkId": "requirements-referenced",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:5866d4e0de8fcde81cfdbc2721f9f969aa6d8af927859a6fd4cc8777a233e3ac",
+        "path": ".expert-team\\work-items\\wi-t1000364\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
