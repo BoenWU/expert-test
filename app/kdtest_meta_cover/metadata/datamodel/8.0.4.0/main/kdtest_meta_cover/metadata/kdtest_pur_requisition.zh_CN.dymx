@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeployMetadata>
+  <MasterId>657FFCYUN2/R</MasterId>
+  <Id>657FFCYUN2/R</Id>
+  <DesignMetas>
+    <DesignFormMetaL>
+      <Number>kdtest_pur_requisition</Number>
+      <PkId>657FKUOLYBSC</PkId>
+      <DataXml>
+        <FormMetadata/>
+      </DataXml>
+      <Name>采购申请单</Name>
+      <Id>657FFCYUN2/R</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignFormMetaL>
+    <DesignEntityMetaL>
+      <Number>kdtest_pur_requisition</Number>
+      <PkId>657FKUULTGN4</PkId>
+      <DataXml>
+        <EntityMetadata/>
+      </DataXml>
+      <Name>采购申请单</Name>
+      <Id>657FFCYUN2/R</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignEntityMetaL>
+  </DesignMetas>
+  <Version>1792997252070</Version>
+  <BOSVersion>1.0</BOSVersion>
+</DeployMetadata>

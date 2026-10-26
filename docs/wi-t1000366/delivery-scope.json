@@ -1,0 +1,33 @@
+{
+  "environmentFile": "C:\\Users\\kingdee\\lingeebuild-beta\\workspaces\\ac41cddea909249846a509ac77a4c536\\测试项目-03\\.lingee-task-worktrees\\wi-t1000366\\app\\kdtest_meta_cover\\_runtime\\test-environment.json",
+  "completed": [
+    {
+      "itemId": "REQ-001",
+      "evidence": [
+        "runBatch 写入及回读验证通过（1/1）：表单 kdtest_pur_requisition（采购申请单，formId=657FFCYUN2/R）在应用 kdtest_meta_cover 下创建，结果文件 app\\kdtest_meta_cover\\_runtime\\cosmic-metadata\\output\\last_result.runBatch.29b21d04.json",
+        "单据采用标准单据模板 bos_billtpl（预置单据编号为手工编码、单据状态、审核人/审核日期及保存/提交/审核操作），emit 产物 app\\kdtest_meta_cover\\metadata\\_emit\\direct_d513b5c7248f\\artifact_20261026_064537_kdtest_pur_requisition.json",
+        "表头与分录结构完整：表头 5 个业务字段 + 物料明细分录 5 个字段，含物料/申请数量必填与物料→计量单位带出"
+      ]
+    },
+    {
+      "itemId": "EXP-001",
+      "evidence": [
+        "表头字段申请日期（日期）、申请人（人员）、申请部门（组织）、申请理由（文本）、备注（文本）已随初始批次创建并回读验证通过",
+        "setProperties 默认值写入并回读验证通过（2/2）：申请日期默认当天（getToday）、申请人默认当前登录人（getCurrentUser）"
+      ]
+    },
+    {
+      "itemId": "EXP-002",
+      "evidence": [
+        "分录字段物料（基础资料引用 bd_material，必填）、申请数量（数量，必填，联动计量单位）、计量单位（单位，由物料基本单位 baseunit 带出）、期望到货日期（日期）、行备注（文本）已随初始批次创建并回读验证通过"
+      ]
+    }
+  ],
+  "summary": "已在应用 kdtest_meta_cover 下新建采购申请单：表头可录申请日期（默认当天）、申请人（默认当前登录人）、申请部门、申请理由与备注，物料明细分录可多行录入物料（必填、选择后带出计量单位）、申请数量（必填）、计量单位、期望到货日期与行备注；单据编号为手工编码，按标准平台规则支持保存、提交、审核流转。元数据写入与回读验证全部通过。",
+  "notes": [
+    "本轮仅完成元数据实现与配置回读验证；业务运行态验收（新建保存、按编号重开核对、提交、审核的实际执行，AC-01~AC-05）属质量阶段范围，本轮未执行，保留未验证状态。",
+    "全部需求行为均可由元数据表达，未涉及 Java 插件开发、注册与生效安排。",
+    "用户未要求发布应用菜单，本轮未配置菜单入口；表单可通过测试环境交接中的表单预览与列表入口访问。",
+    "源码同步（DYM 导出）已在后台发起，完成情况以同步任务状态为准，不影响本轮已验证的元数据写入。"
+  ]
+}
