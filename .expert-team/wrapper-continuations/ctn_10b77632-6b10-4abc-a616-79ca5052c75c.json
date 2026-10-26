@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "continuationId": "ctn_10b77632-6b10-4abc-a616-79ca5052c75c",
+  "workItemId": "wi-t1000373",
+  "workspaceRealpath": "C:\\Users\\kingdee\\lingeebuild-beta\\workspaces\\ac41cddea909249846a509ac77a4c536\\测试项目-03\\.lingee-task-worktrees\\wi-t1000373",
+  "target": "workflow",
+  "operation": "complete",
+  "fixedArguments": {
+    "--workspace": "C:\\Users\\kingdee\\lingeebuild-beta\\workspaces\\ac41cddea909249846a509ac77a4c536\\测试项目-03\\.lingee-task-worktrees\\wi-t1000373",
+    "--work-item": "wi-t1000373",
+    "--action": "app-build",
+    "--expected-revision": 1,
+    "--expected-requirements-sha256": "sha256:f1ea286b138682afaba42fdc2ca0d286ab01ac9943ab7bc3ffb169ee3e1e309f",
+    "--scope-file": "C:\\Users\\kingdee\\lingeebuild-beta\\workspaces\\ac41cddea909249846a509ac77a4c536\\测试项目-03\\.lingee-task-worktrees\\wi-t1000373\\docs\\wi-t1000373\\delivery-scope.json",
+    "--result-status": "completed"
+  },
+  "requiredInputs": {},
+  "status": "pending",
+  "createdAt": "2026-10-26T08:16:45.135Z",
+  "consumedAt": null
+}

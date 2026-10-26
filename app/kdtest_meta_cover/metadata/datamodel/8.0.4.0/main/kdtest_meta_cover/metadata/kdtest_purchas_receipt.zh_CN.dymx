@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DeployMetadata>
+  <MasterId>657OGNFR1N/Z</MasterId>
+  <Id>657OGNFR1N/Z</Id>
+  <DesignMetas>
+    <DesignFormMetaL>
+      <Number>kdtest_purchas_receipt</Number>
+      <PkId>657OKQ/NTL3Q</PkId>
+      <DataXml>
+        <FormMetadata/>
+      </DataXml>
+      <Name>采购入库单</Name>
+      <Id>657OGNFR1N/Z</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignFormMetaL>
+    <DesignEntityMetaL>
+      <Number>kdtest_purchas_receipt</Number>
+      <PkId>657OKQ5=617F</PkId>
+      <DataXml>
+        <EntityMetadata/>
+      </DataXml>
+      <Name>采购入库单</Name>
+      <Id>657OGNFR1N/Z</Id>
+      <LocaleId>zh_CN</LocaleId>
+    </DesignEntityMetaL>
+  </DesignMetas>
+  <Version>1793002992198</Version>
+  <BOSVersion>1.0</BOSVersion>
+</DeployMetadata>

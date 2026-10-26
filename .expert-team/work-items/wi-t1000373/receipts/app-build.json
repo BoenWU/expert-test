@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "app-build:2",
+  "receiptType": "cosmic-app-build",
+  "specId": "cosmic-development-spec",
+  "graphRevision": 13,
+  "actionId": "app-build",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:689cdd4b5a8ec061d601d61adc0f6dbc00b24b9110cfd0f021eb1c4bfbe82996",
+  "createdAt": "2026-10-26T08:26:46.724Z",
+  "timing": {
+    "startedAt": "2026-10-26T08:16:45.062Z",
+    "completedAt": "2026-10-26T08:26:46.724Z",
+    "durationMs": 601662
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000373/delivery-summary.md",
+      "bytes": 5779,
+      "sha256": "sha256:cd2e2eb2780d9e2f78e69950268214524dcf353c93e56d8cbeeade154a77e41f",
+      "title": "元数据修改测试 — 开发实现交付摘要"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "app-build:completion",
+      "status": "passed"
+    }
+  ]
+}
