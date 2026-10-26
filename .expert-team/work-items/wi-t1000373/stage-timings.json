@@ -10,6 +10,11 @@
       "startedAt": "2026-10-26T08:16:45.062Z",
       "completedAt": "2026-10-26T08:26:46.724Z",
       "durationMs": 601662
+    },
+    "acceptance": {
+      "startedAt": "2026-10-26T08:27:36.596Z",
+      "completedAt": "2026-10-26T08:55:38.310Z",
+      "durationMs": 1681714
     }
   }
 }
