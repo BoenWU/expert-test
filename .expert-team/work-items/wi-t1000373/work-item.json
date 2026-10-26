@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000373",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "创建一张采购入库单\n\n再‘kdtest_meta_cover’下创建一张采购入库单",
+  "request": "创建一张采购入库单\n\n再‘kdtest_meta_cover’下创建一张采购入库单",
+  "status": "active",
+  "specId": "cosmic-development-spec",
+  "revision": 0,
+  "createdAt": "2026-10-26T08:14:02.364Z"
+}
