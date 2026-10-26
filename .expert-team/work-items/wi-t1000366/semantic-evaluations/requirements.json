@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "actionId": "requirements",
+  "status": "passed",
+  "evaluatorId": "artifact.validation",
+  "evaluatorVersion": 1,
+  "sourceReceiptId": "requirements:3",
+  "sourceArtifactSha256": "sha256:92ae9b3b32d6ee9ce7067665fdb481146b3bb90b3b4c94cd325fcffb0f25c3ce",
+  "validator": "outputs/requirements-baseline-validator.mjs",
+  "evaluatedAt": "2026-10-26T06:36:39.354Z"
+}

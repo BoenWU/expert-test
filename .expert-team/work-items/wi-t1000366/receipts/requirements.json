@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:3",
+  "receiptType": "cosmic-requirements",
+  "specId": "cosmic-development-spec",
+  "graphRevision": 13,
+  "actionId": "requirements",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:8b57fc0535cc97b3d0d810eb70d5b8240d4bfa94c4c8ff9db919a75be4d03748",
+  "createdAt": "2026-10-26T06:36:39.264Z",
+  "timing": {
+    "startedAt": "2026-10-26T05:50:29.794Z",
+    "completedAt": "2026-10-26T06:36:39.264Z",
+    "durationMs": 2769470
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000366/requirements.md",
+      "bytes": 6920,
+      "sha256": "sha256:92ae9b3b32d6ee9ce7067665fdb481146b3bb90b3b4c94cd325fcffb0f25c3ce",
+      "title": "需求：在 kdtestmetacover 下新建采购申请单"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}

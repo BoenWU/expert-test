@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "stages": {
+    "requirements": [
+      {
+        "sourceReceiptId": "requirements:1",
+        "sourceArtifactSha256": "sha256:c3f3743a53bf7244ac97b3160a40e644c58fa9656b77f8ded3a57c0965c3ece2",
+        "code": "SEMANTIC_ARTIFACT_VALIDATION_FAILED",
+        "reopenedAt": "2026-10-26T05:55:33.995Z"
+      }
+    ]
+  }
+}
