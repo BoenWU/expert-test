@@ -4,8 +4,15 @@
   "workItemType": "initial-build",
   "title": "帮我创建一张采购申请单\n\n在‘kdtest_meta_cover’下建一张采购申请单",
   "request": "帮我创建一张采购申请单\n\n在‘kdtest_meta_cover’下建一张采购申请单",
-  "status": "active",
+  "status": "completed",
   "specId": "cosmic-development-spec",
-  "revision": 0,
-  "createdAt": "2026-10-23T08:42:15.247Z"
+  "revision": 1,
+  "createdAt": "2026-10-23T08:42:15.247Z",
+  "completedAt": "2026-10-23T09:13:34.655Z",
+  "completion": {
+    "applicationRevision": 1,
+    "snapshotHash": "sha256:588a3775050d8d89a46f620895c553ba2a50ba6cff67b7cf80c022ba48200592",
+    "completedAt": "2026-10-23T09:13:34.655Z"
+  },
+  "updatedAt": "2026-10-23T09:13:34.655Z"
 }

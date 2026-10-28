@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "acceptance:3",
+  "receiptType": "cosmic-verification",
+  "specId": "cosmic-development-spec",
+  "graphRevision": 13,
+  "actionId": "acceptance",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:a44c9a14c5f176ee074764a35a565951964cc851d444610b2a3797aac17ed0b7",
+  "createdAt": "2026-10-23T09:13:34.542Z",
+  "timing": {
+    "startedAt": "2026-10-23T08:56:40.938Z",
+    "completedAt": "2026-10-23T09:13:34.542Z",
+    "durationMs": 1013604
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000362/verification.md",
+      "bytes": 9102,
+      "sha256": "sha256:7d64e25b786a1865f044976a32bf7b7dfbf370558ae65325a480962970c387dd",
+      "title": "测试验证报告"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "acceptance:completion",
+      "status": "passed"
+    }
+  ]
+}

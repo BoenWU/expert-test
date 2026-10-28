@@ -1,0 +1,9 @@
+{
+  "editor": "TD.kd-table-cell .kd-cq-input",
+  "gesture": "click",
+  "cells": [
+    {"target": "@e57", "kind": "text", "value": "WL-QA-001"},
+    {"target": "@e58", "kind": "text", "value": "测试物料-笔记本电脑"},
+    {"target": "@e60", "kind": "number", "value": 5}
+  ]
+}
