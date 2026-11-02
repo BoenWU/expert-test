@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:dd0dac625c19a7529a1d27b4e9116d18c8d40047e593043df6ba33d99be1e624",
+  "createdAt": "2026-11-02T07:58:19.944Z",
+  "timing": {
+    "startedAt": "2026-11-02T07:57:56.567Z",
+    "completedAt": "2026-11-02T07:58:19.944Z",
+    "durationMs": 23377
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000504/requirements.md",
+      "bytes": 3277,
+      "sha256": "sha256:ebf9fbdf58fdec9542c4f4477fd033de9b563494735db0e8d6cdd87d9d9336c6",
+      "role": "requirements",
+      "purpose": "502 静态错误页需求基线与验收场景",
+      "title": "502 静态错误页 需求基线"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed",
+      "detail": "docs/wi-t1000504/requirements.md 已写入，sha256 已计算"
+    },
+    {
+      "checkId": "ac-fields-complete",
+      "status": "passed",
+      "detail": "3 条 AC 均包含验收条件、入口类型、验证动作、预期结果、证据类型五项必填字段"
+    },
+    {
+      "checkId": "ac-traceability",
+      "status": "passed",
+      "detail": "每条 AC 均可追溯到用户明确提出的静态 502 页面目标或已标记的推荐基线，未采纳项不生成 AC"
+    }
+  ]
+}
