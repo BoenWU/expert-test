@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:e9f00dd61401d23be1364a0a9ebb33fddc99daaf7555ee61643ef25322bfcd48",
+  "createdAt": "2026-11-02T08:04:18.947Z",
+  "timing": {
+    "startedAt": "2026-11-02T08:03:53.323Z",
+    "completedAt": "2026-11-02T08:04:18.947Z",
+    "durationMs": 25624
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000505/requirements.md",
+      "bytes": 2897,
+      "sha256": "sha256:7f0cb0eb87e244ec973bba6e503f7fc16d8c6ab120e6c0193bff49e228681d04",
+      "role": "requirements",
+      "purpose": "403 静态网页的产品基线与验收场景",
+      "title": "403 静态网页 需求"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "core-goal-observable",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-required-fields",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-invented-scope",
+      "status": "passed"
+    }
+  ]
+}

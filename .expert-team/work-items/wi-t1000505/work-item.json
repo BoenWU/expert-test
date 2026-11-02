@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000505",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一个403 静态网页\n\n实现一个403 静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"22589589268987904\",\"code\":\"T1000505\",\"title\":\"实现一个403 静态网页\",\"description\":\"实现一个403 静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试项目-02\"}",
+  "request": "实现一个403 静态网页\n\n实现一个403 静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"22589589268987904\",\"code\":\"T1000505\",\"title\":\"实现一个403 静态网页\",\"description\":\"实现一个403 静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试项目-02\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-02T08:03:53.217Z"
+}
