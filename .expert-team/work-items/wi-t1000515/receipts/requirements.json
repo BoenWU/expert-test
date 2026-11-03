@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:7a95f27e4f7ca1449a153000e884aeec4167fa6a23fd4ff72c0a6f076eb4c36b",
+  "createdAt": "2026-11-03T11:53:11.359Z",
+  "timing": {
+    "startedAt": "2026-11-03T11:52:51.725Z",
+    "completedAt": "2026-11-03T11:53:11.359Z",
+    "durationMs": 19634
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000515/requirements.md",
+      "bytes": 2170,
+      "sha256": "sha256:3e25549b53c61bcbf4b751408df7ac087402cfe8c79a60e85d1225024e453a40",
+      "role": "requirements",
+      "purpose": "动态小狗静态网页的需求基线文档",
+      "title": "需求文档：动态小狗静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}

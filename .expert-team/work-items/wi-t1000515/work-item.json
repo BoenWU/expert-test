@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000515",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一个 动态小狗 静态网页\n\n实现一个 动态小狗 静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23008697164767232\",\"code\":\"T1000515\",\"title\":\"实现一个 动态小狗 静态网页\",\"description\":\"实现一个 动态小狗 静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-06\"}",
+  "request": "实现一个 动态小狗 静态网页\n\n实现一个 动态小狗 静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23008697164767232\",\"code\":\"T1000515\",\"title\":\"实现一个 动态小狗 静态网页\",\"description\":\"实现一个 动态小狗 静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-06\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-03T11:52:51.618Z"
+}
