@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:9165abedb49300340107c06dea150fdea8fbfaa65dccc9653ade2c678e1cfd31",
+  "createdAt": "2026-11-03T11:19:59.173Z",
+  "timing": {
+    "startedAt": "2026-11-03T11:19:25.529Z",
+    "completedAt": "2026-11-03T11:19:59.172Z",
+    "durationMs": 33643
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000514/architecture-baseline.md",
+      "bytes": 1874,
+      "sha256": "sha256:d9a0c4ce0bafb0e625602c64e04a1e6d85e12c0b50c323f9e769b821a377ec14",
+      "role": "primary",
+      "purpose": "爱心静态网页的精简架构基线文档，描述页面范围、数据归属、实现入口与运行方式",
+      "title": "架构基线：爱心静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-exists",
+      "status": "passed"
+    },
+    {
+      "checkId": "artifact-path-matches-contract",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:a34ef00b9b49338cb6b9878b8af56ddebf1b621fafd7a4804fdd32e3b1630480",
+        "path": ".expert-team/work-items/wi-t1000514/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}

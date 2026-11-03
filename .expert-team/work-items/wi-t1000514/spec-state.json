@@ -2,14 +2,42 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:b40de31b37ec562e0cfe1005812bb53b4e422b4279e23a6892ffdc945663ffb2",
-  "updatedAt": "2026-11-03T11:18:41.457Z"
+  "updatedAt": "2026-11-03T11:19:59.173Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000514/requirements.md",
+      "sha256": "sha256:12eb3a808480a524b1ebdc059fa6ec83a9c6e06594106fb310745cd826250e48"
+    },
+    "reason": "需求明确要求实现一个展示爱心图案的静态网页，纯前端 HTML/CSS/JS 实现，不需要服务端，可通过本地文件路径直接打开。无服务端权威数据、认证、后台任务、外部服务集成或跨用户共享数据需求。完全符合 simple-frontend 路由条件。",
+    "evidence": {
+      "supporting": [
+        "需求文件第5行明确声明'纯前端实现，不依赖服务端'",
+        "需求文件第12行明确'不需要服务端（纯前端 HTML/CSS/JS，可直接用浏览器打开）'",
+        "需求文件第31行明确'页面为纯静态文件（HTML 文件，可内联 CSS/JS），无需服务端运行环境，可通过本地文件路径直接打开'",
+        "唯一验收条件 AC-01 只要求浏览器打开页面后可见爱心图案，不涉及数据持久化或服务端交互"
+      ],
+      "excluding": [
+        "需求明确声明'不需要服务端'，排除服务端权威数据",
+        "无认证/权限要求",
+        "无后台任务或外部服务依赖",
+        "无跨用户/跨设备共享数据需求",
+        "无数据库或持久化存储需求"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-11-03T11:19:34.476Z",
+    "sha256": "sha256:a34ef00b9b49338cb6b9878b8af56ddebf1b621fafd7a4804fdd32e3b1630480"
+  }
 }
