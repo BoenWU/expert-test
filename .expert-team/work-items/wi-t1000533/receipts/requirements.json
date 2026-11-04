@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:06468322bb2cdeed91219c1e1d6c6e083fff8f64401bfdabf1e2cf47748d0acf",
+  "createdAt": "2026-11-04T09:58:36.615Z",
+  "timing": {
+    "startedAt": "2026-11-04T09:58:16.482Z",
+    "completedAt": "2026-11-04T09:58:36.615Z",
+    "durationMs": 20133
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000533/requirements.md",
+      "bytes": 1601,
+      "sha256": "sha256:0e98d63f5e00ef1b1a7492ae46654ebbcb0dd441a49cc4e95828ade9eed2334c",
+      "role": "requirements-baseline",
+      "purpose": "404 静态网页需求基线文档，包含目标、核心行为规则与验收标准",
+      "title": "需求基线：404 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "AC-01",
+      "status": "passed"
+    }
+  ]
+}
