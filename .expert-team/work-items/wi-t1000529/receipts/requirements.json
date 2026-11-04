@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:ccbcfe26fc3772845d786746b88dfb2c3d1ca468cc37064eae9d5230faf083d1",
+  "createdAt": "2026-11-04T09:34:40.806Z",
+  "timing": {
+    "startedAt": "2026-11-04T09:34:24.181Z",
+    "completedAt": "2026-11-04T09:34:40.806Z",
+    "durationMs": 16625
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000529/requirements.md",
+      "bytes": 1199,
+      "sha256": "sha256:a2e2043012da5256919159df74cd22efd791b6383fa9f26b33e49e03e7acb53f",
+      "role": "requirements",
+      "purpose": "502静态网页需求文档，包含核心目标和最小充分验收场景",
+      "title": "需求文档：502 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}
