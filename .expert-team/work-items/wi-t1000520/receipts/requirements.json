@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:4a89454254ba616af684c697e48287b1f289b03c9d3ba62bc382ed2eb13ae6ce",
+  "createdAt": "2026-11-04T07:12:49.745Z",
+  "timing": {
+    "startedAt": "2026-11-04T07:12:34.050Z",
+    "completedAt": "2026-11-04T07:12:49.745Z",
+    "durationMs": 15695
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000520/requirements.md",
+      "bytes": 1286,
+      "sha256": "sha256:f1e1944705be721c3a19c9575ea767b53dc6d761f5ff45778ffa299869a5bc6e",
+      "role": "requirements",
+      "purpose": "需求文档：定义静态网页展示鲜花的目标、核心行为与验收场景",
+      "title": "需求文档：静态网页——页面上有一朵鲜花"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    }
+  ]
+}

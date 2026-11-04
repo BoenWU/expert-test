@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000520",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一个静态网页：页面上有一朵鲜花\n\n实现一个静态网页：页面上有一朵鲜花\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23300896200855552\",\"code\":\"T1000520\",\"title\":\"实现一个静态网页：页面上有一朵鲜花\",\"description\":\"实现一个静态网页：页面上有一朵鲜花\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-11\"}",
+  "request": "实现一个静态网页：页面上有一朵鲜花\n\n实现一个静态网页：页面上有一朵鲜花\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23300896200855552\",\"code\":\"T1000520\",\"title\":\"实现一个静态网页：页面上有一朵鲜花\",\"description\":\"实现一个静态网页：页面上有一朵鲜花\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-11\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-04T07:12:33.932Z"
+}
