@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000519",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一只小猫的静态网页，不需要服务端\n\n实现一只小猫的静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23294457403154432\",\"code\":\"T1000519\",\"title\":\"实现一只小猫的静态网页，不需要服务端\",\"description\":\"实现一只小猫的静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-10\"}",
+  "request": "实现一只小猫的静态网页，不需要服务端\n\n实现一只小猫的静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23294457403154432\",\"code\":\"T1000519\",\"title\":\"实现一只小猫的静态网页，不需要服务端\",\"description\":\"实现一只小猫的静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-10\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-04T06:44:21.511Z"
+}

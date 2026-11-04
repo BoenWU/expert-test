@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:250c62dd99572d6ead4f469aef5edc28217cceefbb463b6c1dc0ecba1c837cb6",
+  "createdAt": "2026-11-04T06:44:36.777Z",
+  "timing": {
+    "startedAt": "2026-11-04T06:44:21.621Z",
+    "completedAt": "2026-11-04T06:44:36.777Z",
+    "durationMs": 15156
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000519/requirements.md",
+      "bytes": 1426,
+      "sha256": "sha256:64bf02607b96880256cfc87856d3078e550a5382902d46f26e085abe0b87a4c3",
+      "role": "requirements",
+      "purpose": "小猫静态网页的需求基线文档",
+      "title": "需求文档：小猫静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements:completion",
+      "status": "passed"
+    }
+  ]
+}
