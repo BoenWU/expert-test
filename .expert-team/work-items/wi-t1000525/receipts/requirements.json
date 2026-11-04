@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:f3a5e59d98e071c1f731a3fee89019dc0a455685b415fb491cb8960ed5af711f",
+  "createdAt": "2026-11-04T08:49:50.162Z",
+  "timing": {
+    "startedAt": "2026-11-04T08:49:29.723Z",
+    "completedAt": "2026-11-04T08:49:50.162Z",
+    "durationMs": 20439
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000525/requirements.md",
+      "bytes": 1275,
+      "sha256": "sha256:28269cecaa354caf1c627003f7063d39993aa9066c61730bd411603ab4872761",
+      "role": "requirements",
+      "purpose": "500 静态错误页面的需求基线文档，包含目标、核心行为和验收条件",
+      "title": "需求文档：500 静态错误页面"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "core-goal-coverage",
+      "status": "passed"
+    },
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    }
+  ]
+}

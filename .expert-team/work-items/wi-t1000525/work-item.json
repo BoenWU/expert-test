@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000525",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "实现一个500静态网页\n\n实现一个500静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23325913391308800\",\"code\":\"T1000525\",\"title\":\"实现一个500静态网页\",\"description\":\"实现一个500静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-15\"}",
+  "request": "实现一个500静态网页\n\n实现一个500静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23325913391308800\",\"code\":\"T1000525\",\"title\":\"实现一个500静态网页\",\"description\":\"实现一个500静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-15\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-04T08:49:29.616Z"
+}
