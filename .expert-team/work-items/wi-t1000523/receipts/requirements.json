@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:3900de14b7215c399bf73c751984328cfacb0700c0d27b2b11669c172a05bc11",
+  "createdAt": "2026-11-04T08:42:30.457Z",
+  "timing": {
+    "startedAt": "2026-11-04T08:42:13.557Z",
+    "completedAt": "2026-11-04T08:42:30.457Z",
+    "durationMs": 16900
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000523/requirements.md",
+      "bytes": 1517,
+      "sha256": "sha256:ea511d66740bfd631d28ae3cd5ba4eb430168949b49e39ed572ec2708dcf5308",
+      "role": "requirements",
+      "purpose": "爱心静态网页的需求基线文档，包含目标、核心行为、技术约束和验收场景",
+      "title": "需求：爱心静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-coverage",
+      "status": "passed"
+    }
+  ]
+}
