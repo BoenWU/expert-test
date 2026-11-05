@@ -2,14 +2,40 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:b40de31b37ec562e0cfe1005812bb53b4e422b4279e23a6892ffdc945663ffb2",
-  "updatedAt": "2026-11-04T09:58:36.615Z"
+  "updatedAt": "2026-11-05T01:26:03.302Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000533/requirements.md",
+      "sha256": "sha256:0e98d63f5e00ef1b1a7492ae46654ebbcb0dd441a49cc4e95828ade9eed2334c"
+    },
+    "reason": "已批准需求基线明确要求以单个纯静态 HTML 文件交付 404 页面，浏览器直接打开即可渲染，无需 Web 服务器、后端服务、构建工具、数据接口或任何服务端进程；不存在权威数据存储、认证、后台任务、外部集成或跨用户共享需求。",
+    "evidence": {
+      "supporting": [
+        "需求基线：'以纯静态 HTML 文件形式交付，不依赖任何服务端运行时'",
+        "需求基线：'浏览器直接打开即可渲染，无需 Web 服务器、后端服务或构建工具支持'",
+        "需求基线：'页面所有内容内联在单个 HTML 文件中（含样式和脚本，如有），不依赖外部服务端渲染或数据接口'",
+        "原始任务描述：'实现一个404静态网页，不需要服务端'"
+      ],
+      "excluding": [
+        "无服务端进程要求：AC-01 验证动作为浏览器直接打开文件，预期结果明确'不依赖任何服务端进程'",
+        "无数据持久化要求：页面仅展示静态提示内容，无读写需求",
+        "无认证/权限、后台任务、外部服务或跨用户/设备共享要求"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-11-05T01:25:26.449Z",
+    "sha256": "sha256:aa7a46faaf440370fb681c27600e962a2f2c168397c8abc26f52802eac00fde8"
+  }
 }

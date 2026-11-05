@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:150f25d13d5f5a434153f42b0c4b31664a257a2889bbf6254f39f44e69123622",
+  "createdAt": "2026-11-05T01:26:03.302Z",
+  "timing": {
+    "startedAt": "2026-11-05T01:25:14.773Z",
+    "completedAt": "2026-11-05T01:26:03.302Z",
+    "durationMs": 48529
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000533/architecture-baseline.md",
+      "bytes": 2154,
+      "sha256": "sha256:c42c87249d02fef954816474cfb3366ba2f009f1a4edc551a109e55db2734299",
+      "role": "primary",
+      "purpose": "404静态网页的compact架构基线：单文件纯静态HTML交付形态、页面与交互范围、状态与数据归属、实现入口与运行方式、验证边界",
+      "title": "架构基线：404 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "design-artifact-exists",
+      "status": "passed",
+      "detail": "docs/wi-t1000533/architecture-baseline.md 已通过一次完整初版写入创建"
+    },
+    {
+      "checkId": "design-scope-fidelity",
+      "status": "passed",
+      "detail": "基线未扩展产品语义：核心内容仅 404 标识与未找到提示文案，未规定事项仅作允许项说明"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:aa7a46faaf440370fb681c27600e962a2f2c168397c8abc26f52802eac00fde8",
+        "path": ".expert-team/work-items/wi-t1000533/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
