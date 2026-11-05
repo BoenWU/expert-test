@@ -2,14 +2,46 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:b40de31b37ec562e0cfe1005812bb53b4e422b4279e23a6892ffdc945663ffb2",
-  "updatedAt": "2026-11-04T09:36:20.410Z"
+  "updatedAt": "2026-11-05T08:29:15.101Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000530/requirements.md",
+      "sha256": "sha256:7e5f3288201d7fc400a147e5cb117ba54621da9d91cd1e864ee63cb81357a153"
+    },
+    "reason": "需求基线明确要求纯静态单文件 HTML 爱心网页，无服务端、无认证、无数据库、无后台任务、无外部集成、无跨用户/设备共享数据。AC-01 验收场景仅要求浏览器打开即可渲染爱心图案，零后端依赖。路由为 compact architecture baseline only。",
+    "evidence": {
+      "supporting": [
+        "requirements.md:14 单文件 HTML 形式交付，双击或通过浏览器直接打开即可查看，不依赖外部网络资源与服务端",
+        "requirements.md:15 爱心图案使用 CSS 或 HTML 画布渲染，保证零后端、零运行时依赖",
+        "requirements.md:24 打开后即可看到完整爱心图案，无需登录、提交或任何服务端交互",
+        "requirements.md:25 页面自包含：所需样式与结构内联在 HTML 文件中，不依赖外部服务端接口或动态加载远程资源",
+        "requirements.md:26 页面以静态 HTML 文件形式交付",
+        "AC-01 预期结果：不依赖服务端或后端请求",
+        "issue description: 不需要服务端"
+      ],
+      "excluding": [
+        "无服务端权威数据要求",
+        "无认证/权限要求",
+        "无后台任务要求",
+        "无外部服务集成要求",
+        "无跨用户/设备共享数据要求",
+        "无共享但数据权威边界冲突"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-11-05T08:28:52.969Z",
+    "sha256": "sha256:f39a5e88c92a38da68c84c27806daa17a4c508f40831f4afbe5b7de6d8bf262a"
+  }
 }
