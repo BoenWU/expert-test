@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "implementation:3",
+  "receiptType": "implementation-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "implementation",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:1a69d5e05755cb6914c4bc8564102b5af1456d1c5d5848cb66c223c47a2b0c46",
+  "createdAt": "2026-11-05T08:31:47.543Z",
+  "timing": {
+    "startedAt": "2026-11-05T08:29:55.180Z",
+    "completedAt": "2026-11-05T08:31:47.543Z",
+    "durationMs": 112363
+  },
+  "artifacts": [
+    {
+      "path": "index.html",
+      "bytes": 2931,
+      "sha256": "sha256:7c56ada8aed12b8dc0a8ffd732b7526fcba3357c2abeb2bb16349cf4f4ceef48",
+      "role": "primary",
+      "purpose": "自包含静态爱心网页，浏览器直接打开即可查看",
+      "title": "爱心"
+    },
+    {
+      "path": "docs/wi-t1000530/implementation-report.md",
+      "bytes": 3174,
+      "sha256": "sha256:322baac15f60367915810e2690ecf01431f3b603766201fb66ddd2a5585502f3",
+      "role": "report",
+      "purpose": "实现阶段交付说明与开发验证证据",
+      "title": "实现报告：爱心静态网页"
+    }
+  ],
+  "url": "http://127.0.0.1:8000/index.html",
+  "verification": [
+    {
+      "checkId": "html-structure",
+      "status": "passed"
+    },
+    {
+      "checkId": "self-contained",
+      "status": "passed"
+    },
+    {
+      "checkId": "file-size",
+      "status": "passed"
+    },
+    {
+      "checkId": "preview-http",
+      "status": "passed"
+    },
+    {
+      "checkId": "implementation:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline",
+        "sha256": "sha256:f39a5e88c92a38da68c84c27806daa17a4c508f40831f4afbe5b7de6d8bf262a",
+        "path": ".expert-team/work-items/wi-t1000530/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}

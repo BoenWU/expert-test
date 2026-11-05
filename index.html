@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>爱心</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 50%, #fecdd3 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      overflow: hidden;
+    }
+
+    .stage {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* 爱心：由两个圆形 + 一个旋转方块组合而成 */
+    .heart {
+      position: relative;
+      width: 200px;
+      height: 180px;
+      transform: rotate(-45deg);
+      animation: beat 1.4s ease-in-out infinite;
+      filter: drop-shadow(0 12px 24px rgba(225, 29, 72, 0.35));
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 160px;
+      background: linear-gradient(180deg, #fb7185 0%, #e11d48 60%, #be123c 100%);
+      border-radius: 100px 100px 0 0;
+    }
+
+    .heart::before {
+      left: 0;
+      top: 0;
+    }
+
+    .heart::after {
+      left: 50px;
+      top: 0;
+    }
+
+    /* 旋转方块填充爱心下半三角 */
+    .heart .core {
+      position: absolute;
+      left: 50px;
+      top: 80px;
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+    }
+
+    /* 高光 */
+    .heart .shine {
+      position: absolute;
+      left: 24px;
+      top: 24px;
+      width: 34px;
+      height: 34px;
+      background: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.85) 0%,
+        rgba(255, 255, 255, 0) 70%
+      );
+      border-radius: 50%;
+      transform: rotate(45deg);
+    }
+
+    @keyframes beat {
+      0%,
+      100% {
+        transform: rotate(-45deg) scale(1);
+      }
+      15% {
+        transform: rotate(-45deg) scale(1.12);
+      }
+      30% {
+        transform: rotate(-45deg) scale(1);
+      }
+      45% {
+        transform: rotate(-45deg) scale(1.08);
+      }
+      60% {
+        transform: rotate(-45deg) scale(1);
+      }
+    }
+
+    .caption {
+      position: fixed;
+      bottom: 32px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: #be123c;
+      font-size: 15px;
+      letter-spacing: 2px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+  <div class="stage" aria-label="爱心图案">
+    <div class="heart">
+      <div class="core"></div>
+      <div class="shine"></div>
+    </div>
+  </div>
+  <p class="caption">用 ❤ 制作</p>
+</body>
+</html>
