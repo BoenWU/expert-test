@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:a9c24b6439a5a6a1fea2819b7c0c772ba2faf3be05260e3543adcf83ea54c6a9",
+  "createdAt": "2026-11-04T10:00:43.232Z",
+  "timing": {
+    "startedAt": "2026-11-04T10:00:23.705Z",
+    "completedAt": "2026-11-04T10:00:43.232Z",
+    "durationMs": 19527
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000534/requirements.md",
+      "bytes": 1557,
+      "sha256": "sha256:a6029bf406b53ecd5b3bf1a464c3539a116abcb08d5887eddd781f2fd81e8cbd",
+      "role": "requirements",
+      "purpose": "400静态网页的需求文档，定义页面目标、核心行为和验收场景",
+      "title": "需求文档：400 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    },
+    {
+      "checkId": "core-goal-covered",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-observable",
+      "status": "passed"
+    }
+  ]
+}
