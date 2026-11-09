@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "implementation:3",
+  "receiptType": "implementation-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "implementation",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:2f17b2bac24312f3fbcc764e454b9785e0e1e5936630e01a33b13a02d0aa5450",
+  "createdAt": "2026-11-09T05:43:09.360Z",
+  "timing": {
+    "startedAt": "2026-11-09T05:41:21.333Z",
+    "completedAt": "2026-11-09T05:43:09.359Z",
+    "durationMs": 108026
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000537/implementation-report.md",
+      "bytes": 3232,
+      "sha256": "sha256:d9438b3ed642448fa08ac433cea0a68b1359cd54525d843668bfa23e24d8e3d8",
+      "role": "primary",
+      "purpose": "404 静态网页的实现报告，记录变更行为、实现范围、AC 覆盖、开发验证和遗留风险",
+      "title": "实现报告：404 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "html5-structure",
+      "status": "passed"
+    },
+    {
+      "checkId": "key-elements-exist",
+      "status": "passed"
+    },
+    {
+      "checkId": "home-link-reachable",
+      "status": "passed"
+    },
+    {
+      "checkId": "responsive-design",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-external-deps",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-server-logic",
+      "status": "passed"
+    },
+    {
+      "checkId": "implementation:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline",
+        "sha256": "sha256:e49ee24d6397ce59e808a8ba883b4071adca72fd1091210d54b7e14f068eec68",
+        "path": ".expert-team\\work-items\\wi-t1000537\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}

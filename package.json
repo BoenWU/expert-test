@@ -1,0 +1,6 @@
+{
+  "name": "static-404-page",
+  "version": "1.0.0",
+  "description": "404 static error page",
+  "private": true
+}
