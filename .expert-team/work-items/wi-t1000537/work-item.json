@@ -4,8 +4,15 @@
   "workItemType": "initial-build",
   "title": "实现个404静态网页\n\n实现个404静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23653948615299072\",\"code\":\"T1000537\",\"title\":\"实现个404静态网页\",\"description\":\"实现个404静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-22\"}",
   "request": "实现个404静态网页\n\n实现个404静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"23653948615299072\",\"code\":\"T1000537\",\"title\":\"实现个404静态网页\",\"description\":\"实现个404静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"requirement\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-22\"}",
-  "status": "active",
+  "status": "completed",
   "specId": "general-application-development-spec",
-  "revision": 0,
-  "createdAt": "2026-11-05T06:34:30.685Z"
+  "revision": 1,
+  "createdAt": "2026-11-05T06:34:30.685Z",
+  "completedAt": "2026-11-09T05:50:10.020Z",
+  "completion": {
+    "applicationRevision": 1,
+    "snapshotHash": "sha256:cf6aacc9c03de7550682337b427b8349f86484f56e20c51b6419dafbe3e9c6c1",
+    "completedAt": "2026-11-09T05:50:10.020Z"
+  },
+  "updatedAt": "2026-11-09T05:50:10.020Z"
 }
