@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:43a26c17b552ada2483719c8a633e5316f37c589e545541faeb92c23fae75b28",
+  "createdAt": "2026-11-09T05:32:11.293Z",
+  "timing": {
+    "startedAt": "2026-11-06T07:03:50.931Z",
+    "completedAt": "2026-11-09T05:32:11.292Z",
+    "durationMs": 253700361
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000537/architecture-baseline.md",
+      "bytes": 2016,
+      "sha256": "sha256:c17c44ea857ab60b73d46e249ac0011fc8c15eadd8fea1dc012b884cebf64737",
+      "role": "primary",
+      "purpose": "404 静态网页的架构基线文档，确定 simple-frontend compact 路线、纯静态 HTML 实现入口、无服务端无持久化数据的数据归属，以及 AC-01 覆盖说明",
+      "title": "架构基线：404 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "design:completion",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:e49ee24d6397ce59e808a8ba883b4071adca72fd1091210d54b7e14f068eec68",
+        "path": ".expert-team\\work-items\\wi-t1000537\\spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
