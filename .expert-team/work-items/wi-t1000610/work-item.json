@@ -1,0 +1,11 @@
+{
+  "workItemId": "wi-t1000610",
+  "applicationId": "application",
+  "workItemType": "initial-build",
+  "title": "创建一个404静态网页\n\n创建一个404静态网页\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"26475503070216192\",\"code\":\"T1000610\",\"title\":\"创建一个404静态网页\",\"description\":\"创建一个404静态网页\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-22\"}",
+  "request": "创建一个404静态网页\n\n创建一个404静态网页\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"26475503070216192\",\"code\":\"T1000610\",\"title\":\"创建一个404静态网页\",\"description\":\"创建一个404静态网页\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-22\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-13T01:24:25.919Z"
+}
