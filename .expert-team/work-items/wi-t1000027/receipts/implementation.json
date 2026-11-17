@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "implementation:3",
+  "receiptType": "implementation-report",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "implementation",
+  "inputRevision": 2,
+  "stateVersion": 3,
+  "outcome": "passed",
+  "contentHash": "sha256:2d1b3c0f6158d4239c80f29d34517d0dcc6487f940322db82511792701400a60",
+  "createdAt": "2026-11-17T09:29:43.072Z",
+  "timing": {
+    "startedAt": "2026-11-17T09:27:18.058Z",
+    "completedAt": "2026-11-17T09:29:43.072Z",
+    "durationMs": 145014
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000027/implementation-report.md",
+      "bytes": 4970,
+      "sha256": "sha256:39c8c9c03ac433d82b65bc5cbc3512986d2e9000edcdfc876975e253857a575f",
+      "title": "实现报告：500 静态网页"
+    }
+  ],
+  "url": "http://127.0.0.1:5391/",
+  "verification": [
+    {
+      "checkId": "unit-tests",
+      "status": "passed"
+    },
+    {
+      "checkId": "production-build",
+      "status": "passed"
+    },
+    {
+      "checkId": "dist-self-contained",
+      "status": "passed"
+    },
+    {
+      "checkId": "dev-server-start",
+      "status": "passed"
+    },
+    {
+      "checkId": "implementation:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "inline",
+        "sha256": "sha256:02cb6d5e3cba1971101f2290201da179121021f6393f5775e18fcda0dc009c70",
+        "path": ".expert-team/work-items/wi-t1000027/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
