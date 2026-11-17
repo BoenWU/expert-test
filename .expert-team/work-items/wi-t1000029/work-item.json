@@ -1,0 +1,15 @@
+{
+  "workItemId": "wi-t1000029",
+  "applicationId": "application",
+  "applicationBaseline": {
+    "revision": 0,
+    "snapshotHash": null
+  },
+  "workItemType": "initial-build",
+  "title": "新建个502静态网页\n\n新建个502静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"28093841449955328\",\"code\":\"T1000029\",\"title\":\"新建个502静态网页\",\"description\":\"新建个502静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间001\"}",
+  "request": "新建个502静态网页\n\n新建个502静态网页，不需要服务端\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"28093841449955328\",\"code\":\"T1000029\",\"title\":\"新建个502静态网页\",\"description\":\"新建个502静态网页，不需要服务端\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间001\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-17T12:35:03.560Z"
+}
