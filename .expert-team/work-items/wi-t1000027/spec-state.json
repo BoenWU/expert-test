@@ -2,14 +2,41 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:ce8fc413fc7ea9153cc328923fb3edc39feb25ff73a23d14db0a3bcecb8b5138",
-  "updatedAt": "2026-11-17T09:23:06.915Z"
+  "updatedAt": "2026-11-17T09:24:32.468Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000027/requirements.md",
+      "sha256": "sha256:e2020aa8eb4c9e424d44ff649ae4d411fde0dbadf8b66eaaf2216a9a82611fd3"
+    },
+    "reason": "批准需求只要求一个可离线直接打开的 500 错误提示页面，全部内容随页面文件一起提供；需求明确排除服务端依赖，未涉及数据持久化、多用户共享或任何后台能力，因此按精简前端路线设计单个静态页面。",
+    "evidence": {
+      "supporting": [
+        "需求目标：提供可离线直接打开的 500 错误页面，打开后即看到 500 服务器错误状态说明。",
+        "核心规则 2：页面为静态页面，由浏览器直接加载本地文件即可完整显示，不依赖服务端渲染、接口请求或后台进程。",
+        "核心规则 3：样式与脚本随页面文件一同提供，不依赖外部网络资源，离线表现与联网一致。",
+        "验收场景 AC-01/AC-02 均以本地文件方式打开页面进行界面验证，不要求任何接口或服务端进程。"
+      ],
+      "excluding": [
+        "需求未要求服务端权威数据、数据库或数据跨会话持久化。",
+        "需求未要求认证、权限或用户身份。",
+        "需求未要求后台任务、定时作业、外部服务集成或跨用户/设备共享。",
+        "需求核心规则 2 明确排除服务端渲染、接口请求与后台进程。"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-11-17T09:24:14.412Z",
+    "sha256": "sha256:02cb6d5e3cba1971101f2290201da179121021f6393f5775e18fcda0dc009c70"
+  }
 }
