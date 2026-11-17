@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:99f0b9cf916e7e9198adc5464347003d7ac5672c4a28fc2d5e82ec416df8119e",
+  "createdAt": "2026-11-17T09:23:06.915Z",
+  "timing": {
+    "startedAt": "2026-11-17T09:22:49.033Z",
+    "completedAt": "2026-11-17T09:23:06.914Z",
+    "durationMs": 17881
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000027/requirements.md",
+      "bytes": 2359,
+      "sha256": "sha256:e2020aa8eb4c9e424d44ff649ae4d411fde0dbadf8b66eaaf2216a9a82611fd3",
+      "title": "需求：500 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-exists",
+      "status": "passed"
+    },
+    {
+      "checkId": "acceptance-criteria-format",
+      "status": "passed"
+    },
+    {
+      "checkId": "source-distinction-and-scope",
+      "status": "passed"
+    }
+  ]
+}
