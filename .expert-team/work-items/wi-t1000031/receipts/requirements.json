@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:8af7a41fcbe4c215cf9733e599786fdec395b3670952ca0b1892d75f5d9bcd05",
+  "createdAt": "2026-11-18T01:45:57.998Z",
+  "timing": {
+    "startedAt": "2026-11-18T01:45:31.632Z",
+    "completedAt": "2026-11-18T01:45:57.998Z",
+    "durationMs": 26366
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000031/requirements.md",
+      "bytes": 1410,
+      "sha256": "sha256:8034c72856693d1290e0caee03edb1dc11737ec132bf7facb60f44104e17bfe9",
+      "title": "404 静态网页 — 需求文档"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "core-goals-covered",
+      "status": "passed"
+    },
+    {
+      "checkId": "source-classification-correct",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-traceability",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-invented-scope",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-granularity-proportionate",
+      "status": "passed"
+    },
+    {
+      "checkId": "verifiable-actions",
+      "status": "passed"
+    }
+  ]
+}
