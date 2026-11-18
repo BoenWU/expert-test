@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:a707fcf047f85ead825d79a2c8d2d9b742751f09061a1e69663ae247b91cb5fd",
+  "createdAt": "2026-11-18T02:37:36.336Z",
+  "timing": {
+    "startedAt": "2026-11-18T02:36:42.090Z",
+    "completedAt": "2026-11-18T02:37:36.335Z",
+    "durationMs": 54245
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000029/architecture-baseline.md",
+      "bytes": 3748,
+      "sha256": "sha256:cd9ad7eabf71fcfd7efe2d21c921aefce95ae629f5ba84246cde72863f535722",
+      "title": "502 静态网页架构基线"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed"
+    },
+    {
+      "checkId": "requirements-coverage",
+      "status": "passed"
+    },
+    {
+      "checkId": "route-classification",
+      "status": "passed"
+    },
+    {
+      "checkId": "frontend-deployment-baseline",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:f9fa26ea6874305a30bd63e0e42e2fffd56fa986442787f5b1d06285664575c9",
+        "path": ".expert-team/work-items/wi-t1000029/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
