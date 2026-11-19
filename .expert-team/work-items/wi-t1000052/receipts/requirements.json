@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:6dceb83662a36b1d77dab8085a64f68a42b70f4bfdf17bfff9d1b2173fb1b24b",
+  "createdAt": "2026-11-19T06:41:24.020Z",
+  "timing": {
+    "startedAt": "2026-11-19T06:40:34.750Z",
+    "completedAt": "2026-11-19T06:41:24.020Z",
+    "durationMs": 49270
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000052/requirements.md",
+      "bytes": 6345,
+      "sha256": "sha256:90b96e23afc686476619afa75f4072250de88be64e6b75f8157caf17cc6029f0",
+      "title": "爱心主题静态网页 · 需求基线"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "requirements-format-consistency",
+      "status": "passed",
+      "detail": "文档检查器返回 valid: true，findings 为空"
+    },
+    {
+      "checkId": "goal-to-ac-coverage",
+      "status": "passed",
+      "detail": "用户提出的核心目标（渲染与动效、双视口不溢出、纯前端无接口请求）分别映射到 AC-01、AC-02、AC-03，无未覆盖目标"
+    }
+  ]
+}

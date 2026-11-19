@@ -1,0 +1,15 @@
+{
+  "workItemId": "wi-t1000052",
+  "applicationId": "application",
+  "applicationBaseline": {
+    "revision": 0,
+    "snapshotHash": null
+  },
+  "workItemType": "initial-build",
+  "title": "实现爱心主题静态网页\n\n使用纯前端技术（HTML + CSS，可选少量 JavaScript）实现一个爱心主题静态网页，不依赖任何服务端接口与构建服务。页面需具备完整的视觉呈现与基础交互：爱心主体图形（可用 CSS 绘制或 SVG）、柔和的渐变背景与动效（如心跳、漂浮光点）、居中排版与响应式适配，并提供简洁的标题与祝福文案。交付物为可直接用浏览器打开或经静态服务器托管的页面文件，不引入后端、数据库与外部登录依赖。\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"28729241319247872\",\"code\":\"T1000052\",\"title\":\"实现爱心主题静态网页\",\"description\":\"使用纯前端技术（HTML + CSS，可选少量 JavaScript）实现一个爱心主题静态网页，不依赖任何服务端接口与构建服务。页面需具备完整的视觉呈现与基础交互：爱心主体图形（可用 CSS 绘制或 SVG）、柔和的渐变背景与动效（如心跳、漂浮光点）、居中排版与响应式适配，并提供简洁的标题与祝福文案。交付物为可直接用浏览器打开或经静态服务器托管的页面文件，不引入后端、数据库与外部登录依赖。\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[{\"description\":\"浏览器直接打开页面即可正常渲染爱心图形、文案与动效，无控制台报错\",\"verificationMethod\":\"readback\"},{\"description\":\"页面在桌面端（1440×900）与移动端（390×844）视口下均无横向滚动、布局不溢出\",\"verificationMethod\":\"test\"},{\"description\":\"页面不发起任何后端接口请求，全部资源为本地静态文件\",\"verificationMethod\":\"review\"}],\"projectName\":\"测试空间-005\"}",
+  "request": "实现爱心主题静态网页\n\n使用纯前端技术（HTML + CSS，可选少量 JavaScript）实现一个爱心主题静态网页，不依赖任何服务端接口与构建服务。页面需具备完整的视觉呈现与基础交互：爱心主体图形（可用 CSS 绘制或 SVG）、柔和的渐变背景与动效（如心跳、漂浮光点）、居中排版与响应式适配，并提供简洁的标题与祝福文案。交付物为可直接用浏览器打开或经静态服务器托管的页面文件，不引入后端、数据库与外部登录依赖。\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"28729241319247872\",\"code\":\"T1000052\",\"title\":\"实现爱心主题静态网页\",\"description\":\"使用纯前端技术（HTML + CSS，可选少量 JavaScript）实现一个爱心主题静态网页，不依赖任何服务端接口与构建服务。页面需具备完整的视觉呈现与基础交互：爱心主体图形（可用 CSS 绘制或 SVG）、柔和的渐变背景与动效（如心跳、漂浮光点）、居中排版与响应式适配，并提供简洁的标题与祝福文案。交付物为可直接用浏览器打开或经静态服务器托管的页面文件，不引入后端、数据库与外部登录依赖。\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[{\"description\":\"浏览器直接打开页面即可正常渲染爱心图形、文案与动效，无控制台报错\",\"verificationMethod\":\"readback\"},{\"description\":\"页面在桌面端（1440×900）与移动端（390×844）视口下均无横向滚动、布局不溢出\",\"verificationMethod\":\"test\"},{\"description\":\"页面不发起任何后端接口请求，全部资源为本地静态文件\",\"verificationMethod\":\"review\"}],\"projectName\":\"测试空间-005\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-19T06:40:34.638Z"
+}
