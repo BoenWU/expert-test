@@ -1,0 +1,15 @@
+{
+  "workItemId": "wi-t1000053",
+  "applicationId": "application",
+  "applicationBaseline": {
+    "revision": 0,
+    "snapshotHash": null
+  },
+  "workItemType": "initial-build",
+  "title": "实现一个502静态网页\n\n交付一个纯静态的 502 Bad Gateway 错误页，不包含任何服务端代码。页面以 HTML/CSS（必要时少量原生 JS）实现，可直接用浏览器打开或部署在任意静态托管上；需呈现清晰的 502 错误说明、品牌/标题区与返回入口，并适配桌面与移动端视口。工作范围仅限静态资源文件，不含后端接口、数据库或运行时服务。\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"28734101125083136\",\"code\":\"T1000053\",\"title\":\"实现一个502静态网页\",\"description\":\"交付一个纯静态的 502 Bad Gateway 错误页，不包含任何服务端代码。页面以 HTML/CSS（必要时少量原生 JS）实现，可直接用浏览器打开或部署在任意静态托管上；需呈现清晰的 502 错误说明、品牌/标题区与返回入口，并适配桌面与移动端视口。工作范围仅限静态资源文件，不含后端接口、数据库或运行时服务。\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[{\"description\":\"静态页面可通过直接打开 index.html 或本地静态服务器正常渲染，无任何后端服务依赖\",\"verificationMethod\":\"test\"},{\"description\":\"页面明确展示 502 错误语义（502 / Bad Gateway 标题与错误说明文案）及返回或重试入口\",\"verificationMethod\":\"review\"},{\"description\":\"桌面与移动视口下布局完整可读，无横向溢出或元素重叠\",\"verificationMethod\":\"test\"},{\"description\":\"资源引用使用相对路径或内联方式，离线环境下页面仍可完整展示\",\"verificationMethod\":\"test\"}],\"projectName\":\"测试空间-006\"}",
+  "request": "实现一个502静态网页\n\n交付一个纯静态的 502 Bad Gateway 错误页，不包含任何服务端代码。页面以 HTML/CSS（必要时少量原生 JS）实现，可直接用浏览器打开或部署在任意静态托管上；需呈现清晰的 502 错误说明、品牌/标题区与返回入口，并适配桌面与移动端视口。工作范围仅限静态资源文件，不含后端接口、数据库或运行时服务。\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"28734101125083136\",\"code\":\"T1000053\",\"title\":\"实现一个502静态网页\",\"description\":\"交付一个纯静态的 502 Bad Gateway 错误页，不包含任何服务端代码。页面以 HTML/CSS（必要时少量原生 JS）实现，可直接用浏览器打开或部署在任意静态托管上；需呈现清晰的 502 错误说明、品牌/标题区与返回入口，并适配桌面与移动端视口。工作范围仅限静态资源文件，不含后端接口、数据库或运行时服务。\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[{\"description\":\"静态页面可通过直接打开 index.html 或本地静态服务器正常渲染，无任何后端服务依赖\",\"verificationMethod\":\"test\"},{\"description\":\"页面明确展示 502 错误语义（502 / Bad Gateway 标题与错误说明文案）及返回或重试入口\",\"verificationMethod\":\"review\"},{\"description\":\"桌面与移动视口下布局完整可读，无横向溢出或元素重叠\",\"verificationMethod\":\"test\"},{\"description\":\"资源引用使用相对路径或内联方式，离线环境下页面仍可完整展示\",\"verificationMethod\":\"test\"}],\"projectName\":\"测试空间-006\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-19T07:00:11.086Z"
+}

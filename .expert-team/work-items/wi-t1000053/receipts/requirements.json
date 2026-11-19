@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:8b43625358c733ad944ada05761224e452a505514b7ddec78cc6da626598a3b8",
+  "createdAt": "2026-11-19T07:00:37.570Z",
+  "timing": {
+    "startedAt": "2026-11-19T07:00:11.191Z",
+    "completedAt": "2026-11-19T07:00:37.570Z",
+    "durationMs": 26379
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000053/requirements.md",
+      "bytes": 5571,
+      "sha256": "sha256:7b706a6dcd00a0195d74c4401584400ae5a30c9734756f888cce5c15c7f9e6b1",
+      "title": "需求：502 Bad Gateway 静态错误页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-present",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-required-fields",
+      "status": "passed"
+    },
+    {
+      "checkId": "user-goal-ac-coverage",
+      "status": "passed"
+    },
+    {
+      "checkId": "scope-boundary-honored",
+      "status": "passed"
+    },
+    {
+      "checkId": "no-external-resource-dependency",
+      "status": "passed"
+    }
+  ]
+}
