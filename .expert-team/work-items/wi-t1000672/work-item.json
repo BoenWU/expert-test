@@ -1,0 +1,15 @@
+{
+  "workItemId": "wi-t1000672",
+  "applicationId": "application",
+  "applicationBaseline": {
+    "revision": 0,
+    "snapshotHash": null
+  },
+  "workItemType": "initial-build",
+  "title": "实现一个503静态网页\n\n实现一个503静态网页\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30191325945012224\",\"code\":\"T1000672\",\"title\":\"实现一个503静态网页\",\"description\":\"实现一个503静态网页\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-32\"}",
+  "request": "实现一个503静态网页\n\n实现一个503静态网页\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30191325945012224\",\"code\":\"T1000672\",\"title\":\"实现一个503静态网页\",\"description\":\"实现一个503静态网页\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-32\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-23T07:30:33.713Z"
+}
