@@ -1,0 +1,15 @@
+{
+  "workItemId": "wi-t1000670",
+  "applicationId": "application",
+  "applicationBaseline": {
+    "revision": 0,
+    "snapshotHash": null
+  },
+  "workItemType": "initial-build",
+  "title": "实现一个爱心静态网页\n\n实现一个爱心静态网页\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30185607707762688\",\"code\":\"T1000670\",\"title\":\"实现一个爱心静态网页\",\"description\":\"实现一个爱心静态网页\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-30\"}",
+  "request": "实现一个爱心静态网页\n\n实现一个爱心静态网页\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30185607707762688\",\"code\":\"T1000670\",\"title\":\"实现一个爱心静态网页\",\"description\":\"实现一个爱心静态网页\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-30\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-23T07:11:11.837Z"
+}
