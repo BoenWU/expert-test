@@ -1,0 +1,15 @@
+{
+  "workItemId": "wi-t1000046",
+  "applicationId": "application",
+  "applicationBaseline": {
+    "revision": 0,
+    "snapshotHash": null
+  },
+  "workItemType": "initial-build",
+  "title": "1\n\n1\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30550315103174656\",\"code\":\"T1000046\",\"title\":\"1\",\"description\":\"1\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间001\"}",
+  "request": "1\n\n1\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30550315103174656\",\"code\":\"T1000046\",\"title\":\"1\",\"description\":\"1\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间001\"}",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-24T07:16:45.952Z"
+}
