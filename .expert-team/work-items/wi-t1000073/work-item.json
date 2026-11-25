@@ -1,0 +1,16 @@
+{
+  "workItemId": "wi-t1000073",
+  "applicationId": "application",
+  "applicationBaseline": {
+    "revision": 0,
+    "snapshotHash": null
+  },
+  "workItemType": "initial-build",
+  "title": "实现个502静态网页\n\n1\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30909796618076160\",\"code\":\"T1000073\",\"title\":\"实现个502静态网页\",\"description\":\"1\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-008\"}",
+  "request": "实现个502静态网页\n\n1\n\nOriginal task context (user-provided facts):\n\n{\"issueId\":\"30909796618076160\",\"code\":\"T1000073\",\"title\":\"实现个502静态网页\",\"description\":\"1\",\"priority\":\"normal\",\"labels\":[],\"kind\":\"feature\",\"acceptanceCriteria\":[],\"projectName\":\"测试空间-008\"}",
+  "issueId": "30909796618076160",
+  "status": "active",
+  "specId": "general-application-development-spec",
+  "revision": 0,
+  "createdAt": "2026-11-25T07:15:16.756Z"
+}
