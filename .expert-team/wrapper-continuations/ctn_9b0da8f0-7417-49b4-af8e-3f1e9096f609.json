@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "continuationId": "ctn_9b0da8f0-7417-49b4-af8e-3f1e9096f609",
+  "workItemId": "wi-t1000070",
+  "workspaceRealpath": "/Users/kingdee/lingeebuild-beta/workspaces/2738b8d13f3999321e4699bf24d82043/测试空间-005/.lingee-multi-repo/tasks/wi-t1000070/repos/repo_cef7b0b534c877db",
+  "target": "workflow",
+  "operation": "complete",
+  "fixedArguments": {
+    "--workspace": "/Users/kingdee/lingeebuild-beta/workspaces/2738b8d13f3999321e4699bf24d82043/测试空间-005/.lingee-multi-repo/tasks/wi-t1000070/repos/repo_cef7b0b534c877db",
+    "--work-item": "wi-t1000070",
+    "--action": "requirements",
+    "--expected-revision": 0
+  },
+  "requiredInputs": {
+    "--result-json": {
+      "source": "stageResult",
+      "description": "For an inline stage with only declared artifact files, submit {\"status\":\"completed\"}; the runtime discovers and hashes those files. Keep actual child results and supporting artifacts unchanged; optional hashes must use sha256:<64-hex>. Completion validates final artifacts, records the receipt and settles the stage without candidate-save or --finalize. Approval decisions apply only to pendingApproval. Update stale candidate hashes when artifacts changed.",
+      "schema": {
+        "status": "completed"
+      },
+      "encoding": "json",
+      "shellSafeAlternative": {
+        "flag": "--result-json-file",
+        "description": "Write the JSON to a UTF-8 file and pass --result-json-file <path> when the command must go through a shell; inline JSON loses its quotes on Windows PowerShell."
+      }
+    }
+  },
+  "status": "pending",
+  "createdAt": "2026-11-25T05:36:09.023Z",
+  "consumedAt": null
+}
