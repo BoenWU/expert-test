@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:d93bf303296d5c22d2e879018f5f96172c41897d144bbe81ca04111f884c8a02",
+  "createdAt": "2026-11-25T05:40:18.496Z",
+  "timing": {
+    "startedAt": "2026-11-25T05:39:44.513Z",
+    "completedAt": "2026-11-25T05:40:18.496Z",
+    "durationMs": 33983
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000070/architecture-baseline.md",
+      "bytes": 5310,
+      "sha256": "sha256:77bfefcf2fe2abda327029f6261f7cd8f1e30160d4f53db0e34be677b4e0ac40",
+      "title": "架构基线：404 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "classification-route-fixed",
+      "status": "passed",
+      "detail": "应用类型固定为 simple-frontend，routeId=compact，理由与支持/排除证据已提交。"
+    },
+    {
+      "checkId": "architecture-baseline-written",
+      "status": "passed",
+      "detail": "docs/wi-t1000070/architecture-baseline.md 已按声明路径写入，包含技术路线、页面范围、数据归属、UI 选型、实现入口、边界与验证方式。"
+    },
+    {
+      "checkId": "frontend-deployment-baseline",
+      "status": "passed",
+      "detail": "前端部署初始化器返回 status=initialized，生成 deploy/Dockerfile 与 .dockerignore，无冲突或跳过。"
+    },
+    {
+      "checkId": "requirements-alignment",
+      "status": "passed",
+      "detail": "设计未扩展需求范围：保持无服务端、无外部依赖、静态文件交付；AC-01、AC-02 均给出确定性验证方式。"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:8a55da8ac2207c1c901c7b7ac8a938b22531924cc5b2ea1f4bfe48fad077ce1b",
+        "path": ".expert-team/work-items/wi-t1000070/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}
