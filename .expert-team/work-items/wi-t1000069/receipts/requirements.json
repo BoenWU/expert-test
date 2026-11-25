@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:94f745e6b898a6e1a3475858175b47b92e508456fe5e1517b8747f0384471903",
+  "createdAt": "2026-11-25T05:30:06.872Z",
+  "timing": {
+    "startedAt": "2026-11-25T05:29:47.065Z",
+    "completedAt": "2026-11-25T05:30:06.872Z",
+    "durationMs": 19807
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000069/requirements.md",
+      "bytes": 3436,
+      "sha256": "sha256:7f386f8a81fb2c34a7c5aecafb65b1bc0deecddab37c2702b24dd3a6c36def6d",
+      "title": "爱心静态网页 需求"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "goal-coverage",
+      "status": "passed"
+    },
+    {
+      "checkId": "ac-structure",
+      "status": "passed"
+    },
+    {
+      "checkId": "baseline-separation",
+      "status": "passed"
+    }
+  ]
+}
