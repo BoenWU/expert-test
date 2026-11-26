@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:c90bcd27f49358b2219775d4579d61759260ebcfe30fd1fd61cc5538f2bab31f",
+  "createdAt": "2026-11-26T12:10:54.725Z",
+  "timing": {
+    "startedAt": "2026-11-26T12:10:34.915Z",
+    "completedAt": "2026-11-26T12:10:54.724Z",
+    "durationMs": 19809
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000084/requirements.md",
+      "bytes": 2579,
+      "sha256": "sha256:c77a38304058a014cf4c6b2e5594213d42ab81c24028606c5d606dc166fc430b",
+      "title": "需求：404 静态网页"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-written",
+      "status": "passed",
+      "detail": "docs/wi-t1000084/requirements.md 已按声明路径完整写入"
+    },
+    {
+      "checkId": "goal-coverage-selfcheck",
+      "status": "passed",
+      "detail": "用户唯一的明确目标（404 静态网页）对应 AC-01 的可观察结果；静态性约束在规则 3 与 AC-01 验证动作中体现"
+    },
+    {
+      "checkId": "no-invented-scope-selfcheck",
+      "status": "passed",
+      "detail": "未臆造角色、受众、平台、非目标或技术选型；风格、文案、路由接入等列为未规定，推荐基线仅一条且标记为推荐"
+    },
+    {
+      "checkId": "ac-traceability-selfcheck",
+      "status": "passed",
+      "detail": "AC-01 追溯用户明确目标与规则 1-3；AC-02 追溯推荐基线（规则 4），无未纳入基线的候选增强生成正式 AC"
+    }
+  ]
+}
