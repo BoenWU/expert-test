@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "sessions": {
+    "ses_dea19516cffeKC194StLorMdc4": {
+      "sessionId": "ses_dea19516cffeKC194StLorMdc4",
+      "executionStageIds": [
+        "requirements"
+      ]
+    }
+  }
+}

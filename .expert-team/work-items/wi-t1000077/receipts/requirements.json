@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "requirements:1",
+  "receiptType": "requirements-baseline",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "requirements",
+  "inputRevision": 0,
+  "stateVersion": 1,
+  "outcome": "passed",
+  "contentHash": "sha256:075e9e03dabf710e8e466c8be43d9625470b48af0f02ecfe00c00065747eb919",
+  "createdAt": "2026-11-26T03:29:50.377Z",
+  "timing": {
+    "startedAt": "2026-11-26T03:29:35.450Z",
+    "completedAt": "2026-11-26T03:29:50.377Z",
+    "durationMs": 14927
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000077/requirements.md",
+      "bytes": 1853,
+      "sha256": "sha256:d6239e02b9d1bad0e61908c6805453998c104b3443bd20d2077eec9604fce44a",
+      "title": "需求：404 静态网页（T1000077）"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "artifact-exists",
+      "status": "passed",
+      "detail": "docs/wi-t1000077/requirements.md 已按声明路径创建并包含目标、核心行为与规则、验收场景三部分。"
+    },
+    {
+      "checkId": "core-goal-covered",
+      "status": "passed",
+      "detail": "用户提出的核心目标「实现一个404静态网页」由 AC-01 的可观察结果覆盖：打开页面即可看到 404 提示且无需后端数据。"
+    },
+    {
+      "checkId": "source-distinction",
+      "status": "passed",
+      "detail": "静态网页属性标注为用户明确提出；404 语义呈现与不依赖外网资源标注为推荐基线；其余未确认事项以「未规定」列出，未混入正式规则。"
+    },
+    {
+      "checkId": "no-invention",
+      "status": "passed",
+      "detail": "未臆造角色、受众、平台适配、导航功能、非目标清单或技术选型；托管方式与 HTTP 状态码保持未规定。"
+    },
+    {
+      "checkId": "ac-executable",
+      "status": "passed",
+      "detail": "AC-01 具备验收条件、入口类型、验证动作、预期结果与证据类型，验证动作仅限定入口，未锁定等待时长或不可控事件。"
+    },
+    {
+      "checkId": "scope-boundary",
+      "status": "passed",
+      "detail": "仅写入 docs/wi-t1000077/requirements.md，未修改应用源码或其他工作项目录。"
+    }
+  ]
+}
