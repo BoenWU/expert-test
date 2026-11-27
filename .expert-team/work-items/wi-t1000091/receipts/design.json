@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "design:2",
+  "receiptType": "architecture-plan",
+  "specId": "general-application-development-spec",
+  "graphRevision": 5,
+  "actionId": "design",
+  "inputRevision": 1,
+  "stateVersion": 2,
+  "outcome": "passed",
+  "contentHash": "sha256:20dfb6c58c9eb5ab5a3275e64f9d2b1730fef1df31896e27b33acc9688a510b2",
+  "createdAt": "2026-11-27T09:38:55.760Z",
+  "timing": {
+    "startedAt": "2026-11-27T09:38:15.485Z",
+    "completedAt": "2026-11-27T09:38:55.760Z",
+    "durationMs": 40275
+  },
+  "artifacts": [
+    {
+      "path": "docs/wi-t1000091/architecture-baseline.md",
+      "bytes": 5811,
+      "sha256": "sha256:7a5bf61394e0a1d77011f7bc3b482764c27639562ce61f75056b22443c8d4dac",
+      "title": "爱心静态网页 架构基线"
+    }
+  ],
+  "verification": [
+    {
+      "checkId": "design:completion",
+      "status": "passed"
+    },
+    {
+      "checkId": "design:application-route",
+      "status": "passed",
+      "applicationProfile": {
+        "applicationType": "simple-frontend",
+        "routeId": "compact",
+        "sha256": "sha256:2a1771d60d82866dffd8700c9d7760626220abf055da385969a09e55e8758df5",
+        "path": ".expert-team/work-items/wi-t1000091/spec-state.json#/applicationProfile"
+      }
+    }
+  ]
+}

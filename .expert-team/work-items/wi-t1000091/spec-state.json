@@ -2,14 +2,42 @@
   "schemaVersion": 2,
   "specId": "general-application-development-spec",
   "specRevision": 16,
-  "state": "requirements_ready",
-  "revision": 1,
+  "state": "design_ready",
+  "revision": 2,
   "completedActions": [
-    "requirements"
+    "requirements",
+    "design"
   ],
   "blockers": [],
   "scenarioId": "feature",
   "graphRevision": 5,
   "graphHash": "sha256:ce8fc413fc7ea9153cc328923fb3edc39feb25ff73a23d14db0a3bcecb8b5138",
-  "updatedAt": "2026-11-27T08:44:02.025Z"
+  "updatedAt": "2026-11-27T09:38:55.760Z",
+  "applicationProfile": {
+    "schemaVersion": 1,
+    "applicationType": "simple-frontend",
+    "source": {
+      "artifactPath": "docs/wi-t1000091/requirements.md",
+      "sha256": "sha256:dde4ea894b1fe3714cdef93770d44749d0931b672982e37abf794ab3e2c7af08"
+    },
+    "reason": "已批准需求只要求一个在浏览器中直接打开的静态网页，页面主体展示爱心图案，明确“不需要服务端”，并要求不依赖外部资源、离线可正常呈现。全部验收场景（AC-01 打开即可见爱心、AC-02 无服务端与无外部资源依赖）都只涉及单页面前端渲染，不涉及任何服务端能力。",
+    "evidence": {
+      "supporting": [
+        "需求结论明确：交付一个在浏览器中展示爱心图案的静态网页，不需要服务端",
+        "核心行为第2条：页面在没有任何后端服务运行的情况下仍能正常展示，直接以本地文件方式打开即可看到爱心",
+        "核心行为第3条：爱心的绘制与页面样式均随页面文件本地提供，不引用外部网络字体、图片、脚本或样式库",
+        "AC-01/AC-02 的入口类型均为“用户界面”，验证动作仅为在浏览器中打开本地页面观察渲染结果"
+      ],
+      "excluding": [
+        "需求全文未提及账号、认证、权限或角色",
+        "需求全文未提及数据库、持久化数据或跨用户共享数据",
+        "需求全文未提及后台任务、定时作业或消息队列",
+        "需求全文未提及调用任何外部服务或第三方接口",
+        "未规定事项明确将动画、点击交互、背景音效、多尺寸适配排除在本次基线之外，不存在隐藏的交互或数据需求"
+      ],
+      "unresolved": []
+    },
+    "decidedAt": "2026-11-27T09:38:22.072Z",
+    "sha256": "sha256:2a1771d60d82866dffd8700c9d7760626220abf055da385969a09e55e8758df5"
+  }
 }
